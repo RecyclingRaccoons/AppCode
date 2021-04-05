@@ -12,6 +12,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Raccoons are cool
+        // Hello
+
+        // hola this is kasia
     }
 
     public void recyclingMainPage(View v) {
