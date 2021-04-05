@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Recycling Academy</string>
+    <string name="intro_name">Recycling Academy</string>
+    <string name="aboutUs">About Us</string>
+    <string name="importance">Importance of Recycling</string>
+    <string name="info">Info</string>
+    <string name="camera">Camera</string>
+    <string name="settings">Settings</string>
+    <string name="recycle">Recycle Categories</string>
+    <string name="references">References</string>
+    <string name="exit">Exit</string>
+    <string name="recyclingCategoryIntroduction">Please Select a Recycling Category</string>
+    <string name="plasticCategory">Plastic</string>
+    <string name="plasticCategoryCD">Plastic Bottle</string>
+    <string name="paperCategory">Paper</string>
+    <string name="paperCategoryCD">Cardboard Box</string>
+    <string name="glassCategory">Glass</string>
+    <string name="glassCategoryCD">Glass Cup</string>
+    <string name="metalCategory">Metal</string>
+    <string name="metalCategoryCD">Metal Bars</string>
 </resources>

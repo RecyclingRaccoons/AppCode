@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclingCategories">
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="525dp"
+        android:contentDescription="@string/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/categoryHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/recyclingCategoryIntroduction"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitButton" />
+
+    <ImageButton
+        android:id="@+id/plasticCategoryButton"
+        android:layout_width="601dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/plasticCategoryCD"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryHeading"
+        app:srcCompat="@drawable/plastic_small" />
+
+    <TextView
+        android:id="@+id/plasticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:text="@string/plasticCategory"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/plasticCategoryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plasticCategoryButton"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <ImageButton
+        android:id="@+id/paperCategoryButton"
+        android:layout_width="603dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/paperCategoryCD"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plasticCategoryButton"
+        app:srcCompat="@drawable/paper_small" />
+
+    <TextView
+        android:id="@+id/paperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:text="@string/paperCategory"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/paperCategoryButton"
+        app:layout_constraintStart_toStartOf="@+id/paperCategoryButton"
+        app:layout_constraintTop_toTopOf="@+id/paperCategoryButton"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <ImageButton
+        android:id="@+id/glassCategoryButton"
+        android:layout_width="601dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/glassCategoryCD"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paperCategoryButton"
+        app:srcCompat="@drawable/glass_small" />
+
+    <TextView
+        android:id="@+id/glassText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:text="@string/glassCategory"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/glassCategoryButton"
+        app:layout_constraintEnd_toEndOf="@+id/glassCategoryButton"
+        app:layout_constraintTop_toTopOf="@+id/glassCategoryButton" />
+
+    <ImageButton
+        android:id="@+id/metalCategoryButton"
+        android:layout_width="604dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/metalCategoryCD"
+        android:scaleType="fitEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glassCategoryButton"
+        app:srcCompat="@drawable/metal_small" />
+
+    <TextView
+        android:id="@+id/metalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:text="@string/metalCategory"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/metalCategoryButton"
+        app:layout_constraintStart_toStartOf="@+id/metalCategoryButton"
+        app:layout_constraintTop_toTopOf="@+id/metalCategoryButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
