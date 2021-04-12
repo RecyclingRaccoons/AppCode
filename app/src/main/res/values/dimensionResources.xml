@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="topMargin">75dp</dimen>
+    <dimen name="h1Size">80sp</dimen>
+    <dimen name="h2Size">55sp</dimen>
 </resources>
