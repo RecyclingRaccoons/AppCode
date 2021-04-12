@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void recyclingImportance(View v) {
+    public void recyclingMainPage2(View v) {
         Intent intent2 = new Intent(this, RecyclingImportance.class);
         startActivity(intent2);
     }
