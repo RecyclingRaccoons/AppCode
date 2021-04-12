@@ -4,22 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:scrollbars="vertical"
     tools:context=".AboutUsPage">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/topMargin"
-        android:text="@string/aboutUs"
-        android:textAlignment="center"
-        android:textColor="@color/teal_700"
-        android:textSize="80sp"
-        android:textStyle="bold"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/aboutUsH1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topMargin"
+            android:text="@string/aboutUs"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/h1Size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/massAcademyLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/logoImageDescription"
+            app:srcCompat="@drawable/mass_academy_logo" />
+
+        <TextView
+            android:id="@+id/aboutUsH2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutRecyclingRaccoonsHeader"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/h2Size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/recyclingRaccoonsParagraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="@string/aboutRecyclingRaccoonsDescription" />
+
+        <TextView
+            android:id="@+id/aboutUsH3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutMAMSHeader" />
+
+        <EditText
+            android:id="@+id/aboutMAMSParagraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:text="@string/aboutMAMSDescription" />
+
+        <TextView
+            android:id="@+id/aboutUsH4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutAFGHeader" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            tools:text="@string/aboutAFGDescription" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

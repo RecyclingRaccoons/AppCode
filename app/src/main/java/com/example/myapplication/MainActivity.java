@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent2 = new Intent(this, RecyclingImportance.class);
         startActivity(intent2);
     }
+
+    public void aboutUsPage(View v) {
+        Intent intentToAboutUs = new Intent(this, AboutUsPage.class);
+        startActivity(intentToAboutUs);
+    }
 }

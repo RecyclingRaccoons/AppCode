@@ -10,6 +10,32 @@
     <string name="recycle">Recycle Categories</string>
     <string name="references">References</string>
     // About Us Page
+    <string name="logoImageDescription">The logo of the Massachusetts Academy of Math and Science
+    </string>
+    <string name="aboutRecyclingRaccoonsHeader">Who are the Recycling Raccoons?</string>
+    <string name="aboutRecyclingRaccoonsDescription">We are a team of students from the
+        Massachusetts Academy of Math and Science in Worcester, Massachusetts who strive to help our
+        community through the creation of this app. As concerns for the environment grow, proper
+        recycling becomes increasingly important. In our research, we found that people that do not
+        recycle do so due to a lack of access or because they find recycling tedious or confusing.
+        Hearing this, we decided that it would be helpful to simplify the most confusing part of
+        the process—determining recyclability or reusing recyclable items. With the guide of this
+        app, everyone becomes capable of helping to save the environment.</string>
+    <string name="aboutMAMSHeader">What is Mass Academy?</string>
+    <string name="aboutMAMSDescription">The Massachusetts Academy of Math and Science (MAMS) is a
+        public school in Worcester, Massachusetts that offers STEM-focused (Science, Technology,
+        Engineering, Math) courses at an advanced level for 11th and 12th graders. The school puts
+        an emphasis on project-based learning and collaboration. Students also pursue long-term
+        projects such as a 5-month independent research project, a 3-month assistive device group
+        project, and a 2-month Apps for Good group project. This app is the work of one Apps for
+        Good project that provides the community with assistance during the recycling process.
+    </string>
+    <string name="aboutAFGHeader">What is Apps for Good?</string>
+    <string name="aboutAFGDescription">Apps for Good is an organization that brings education and
+        access to students interested in coding all over the world. The learning experience is
+        student-driven as small groups of students work together to learn and create their own app
+        which makes a difference in their community. This app is the product of the Recycling
+        Raccoon’s Apps for Good project.</string>
     // Recycling Categories
     <string name="exit">Exit</string>
     <string name="recyclingCategoryIntroduction">Please Select a Recycling Category</string>
