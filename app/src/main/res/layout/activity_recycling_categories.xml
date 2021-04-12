@@ -23,7 +23,7 @@
         android:id="@+id/categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:text="@string/recyclingCategoryIntroduction"
         android:textAlignment="center"
         android:textColor="@color/teal_700"
@@ -35,14 +35,12 @@
         app:layout_constraintTop_toBottomOf="@+id/exitButton" />
 
     <ImageButton
-        android:id="@+id/plasticCategoryButton"
-        android:layout_width="601dp"
-        android:layout_height="147dp"
+        android:id="@+id/imageButton"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/plasticCategoryCD"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,23 +55,21 @@
         android:text="@string/plasticCategory"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/plasticCategoryButton"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/plasticCategoryButton"
-        app:layout_constraintVertical_bias="0.473" />
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <ImageButton
-        android:id="@+id/paperCategoryButton"
-        android:layout_width="603dp"
-        android:layout_height="150dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
-        android:contentDescription="@string/paperCategoryCD"
         android:scaleType="fitEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plasticCategoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/paper_small" />
 
     <TextView
@@ -84,23 +80,21 @@
         android:text="@string/paperCategory"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/paperCategoryButton"
-        app:layout_constraintStart_toStartOf="@+id/paperCategoryButton"
-        app:layout_constraintTop_toTopOf="@+id/paperCategoryButton"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
 
     <ImageButton
-        android:id="@+id/glassCategoryButton"
-        android:layout_width="601dp"
-        android:layout_height="154dp"
+        android:id="@+id/imageButton3"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
-        android:contentDescription="@string/glassCategoryCD"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paperCategoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
         app:srcCompat="@drawable/glass_small" />
 
     <TextView
@@ -111,22 +105,25 @@
         android:text="@string/glassCategory"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/glassCategoryButton"
-        app:layout_constraintEnd_toEndOf="@+id/glassCategoryButton"
-        app:layout_constraintTop_toTopOf="@+id/glassCategoryButton" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton3" />
 
     <ImageButton
-        android:id="@+id/metalCategoryButton"
-        android:layout_width="604dp"
-        android:layout_height="155dp"
+        android:id="@+id/imageButton4"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
-        android:contentDescription="@string/metalCategoryCD"
+        android:layout_marginBottom="10dp"
         android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/glassCategoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintVertical_bias="0.016"
         app:srcCompat="@drawable/metal_small" />
 
     <TextView
@@ -137,8 +134,8 @@
         android:text="@string/metalCategory"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/metalCategoryButton"
-        app:layout_constraintStart_toStartOf="@+id/metalCategoryButton"
-        app:layout_constraintTop_toTopOf="@+id/metalCategoryButton" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
