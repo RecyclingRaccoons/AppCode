@@ -4,86 +4,174 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:scrollbars="vertical"
     tools:context=".AboutUsPage">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/exit"
+        android:onClick="toHomePage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
-        <TextView
-            android:id="@+id/aboutUsH1"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/topMargin"
-            android:text="@string/aboutUs"
-            android:textAlignment="center"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/h1Size"
-            android:textStyle="bold" />
+            android:layout_marginLeft="@dimen/defaultParagraphSpacing"
+            android:layout_marginRight="@dimen/defaultParagraphSpacing"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/massAcademyLogo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/logoImageDescription"
-            app:srcCompat="@drawable/mass_academy_logo" />
+            <TextView
+                android:id="@+id/aboutUsH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:text="@string/aboutUs"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h1Size"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/aboutUsH2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/aboutRecyclingRaccoonsHeader"
-            android:textAlignment="center"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/h2Size"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/massAcademyLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/logoImageDescription"
+                app:srcCompat="@drawable/mass_academy_logo" />
 
-        <EditText
-            android:id="@+id/recyclingRaccoonsParagraph"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            android:text="@string/aboutRecyclingRaccoonsDescription" />
+            <TextView
+                android:id="@+id/aboutUsH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutRecyclingRaccoonsHeader"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h2Size"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/aboutUsH3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/aboutMAMSHeader" />
+            <TextView
+                android:id="@+id/recyclingRaccoonsParagraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/topMargin"
+                android:padding="@dimen/defaultParagraphSpacing"
+                android:text="@string/aboutRecyclingRaccoonsDescription"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
-        <EditText
-            android:id="@+id/aboutMAMSParagraph"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            tools:text="@string/aboutMAMSDescription" />
+            <TextView
+                android:id="@+id/aboutUsH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutMAMSHeader"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h2Size"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/aboutUsH4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/aboutAFGHeader" />
+            <TextView
+                android:id="@+id/aboutMAMSParagraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/topMargin"
+                android:padding="@dimen/defaultParagraphSpacing"
+                android:text="@string/aboutMAMSDescription"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine"
-            tools:text="@string/aboutAFGDescription" />
+            <TextView
+                android:id="@+id/aboutUsH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutAFGHeader"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h2Size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aboutAFGParagraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/topMargin"
+                android:padding="@dimen/defaultParagraphSpacing"
+                android:text="@string/aboutAFGDescription"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navBarConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
+
+        <ImageButton
+            android:id="@+id/recycleButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/info"
+            android:onClick="toHomePage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/references"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/info_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,6 @@
     <dimen name="topMargin">75dp</dimen>
     <dimen name="h1Size">80sp</dimen>
     <dimen name="h2Size">55sp</dimen>
+    <dimen name="defaultParagraphTextSize">30sp</dimen>
+    <dimen name="defaultParagraphSpacing">20sp</dimen>
 </resources>
