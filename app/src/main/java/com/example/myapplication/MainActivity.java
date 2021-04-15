@@ -33,4 +33,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intentToAboutUs = new Intent(this, AboutUsPage.class);
         startActivity(intentToAboutUs);
     }
+
+    public void toHomePage(View v) {
+        Intent toHome = new Intent(this, MainActivity.class);
+        startActivity(toHome);
+    }
+
 }
