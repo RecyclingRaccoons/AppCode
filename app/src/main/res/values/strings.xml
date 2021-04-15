@@ -52,6 +52,7 @@
     <string name="metalCategory">Metal</string>
     <string name="metalCategoryCD">Metal Bars</string>
 
+    <string name="recyclingImportance">Recycling Importance</string>
     <string name="landfill">Landfills</string>
     <string name="incinerator">Incinerator</string>
     <string name="resources">Resources</string>
