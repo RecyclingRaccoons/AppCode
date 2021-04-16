@@ -24,6 +24,7 @@ public class RecyclingImportance extends AppCompatActivity {
     Button resourcesB;
     Button energyB;
     ImageButton exit;
+    // Hidden text tutorial: https://www.youtube.com/watch?v=qj3kKB71u84
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
