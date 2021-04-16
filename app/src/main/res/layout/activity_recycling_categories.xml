@@ -7,25 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".RecyclingCategories">
 
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="525dp"
+        android:contentDescription="@string/exit"
+        android:onClick="exitToHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
     <TextView
         android:id="@+id/categoryHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         android:text="@string/recyclingCategoryIntroduction"
         android:textAlignment="center"
         android:textColor="@color/teal_700"
-        android:textSize="55sp"
+        android:textSize="@dimen/h2Size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/exitButton" />
 
     <ImageButton
         android:id="@+id/plasticButton"
         android:layout_width="600dp"
-        android:layout_height="95dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="5dp"
@@ -42,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="180dp"
         android:text="@string/plasticCategory"
-        android:textSize="30sp"
+        android:textSize="@dimen/defaultParagraphTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/plasticButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +64,7 @@
     <ImageButton
         android:id="@+id/paperButton"
         android:layout_width="600dp"
-        android:layout_height="95dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
@@ -68,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
         android:text="@string/paperCategory"
-        android:textSize="30sp"
+        android:textSize="@dimen/defaultParagraphTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/paperButton"
         app:layout_constraintStart_toStartOf="@+id/paperButton"
@@ -77,7 +90,7 @@
     <ImageButton
         android:id="@+id/glassButton"
         android:layout_width="600dp"
-        android:layout_height="95dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
@@ -94,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="180dp"
         android:text="@string/glassCategory"
-        android:textSize="30sp"
+        android:textSize="@dimen/defaultParagraphTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/glassButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +116,7 @@
     <ImageButton
         android:id="@+id/metalButton"
         android:layout_width="600dp"
-        android:layout_height="95dp"
+        android:layout_height="85dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
@@ -124,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
         android:text="@string/metalCategory"
-        android:textSize="30sp"
+        android:textSize="@dimen/defaultParagraphTextSize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/metalButton"
         app:layout_constraintStart_toStartOf="@+id/metalButton"
@@ -146,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:onClick="toHomePage"
+            android:contentDescription="@string/home"
             app:srcCompat="@drawable/house_small" />
 
         <ImageButton

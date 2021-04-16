@@ -54,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/topMargin"
+                android:onClick="toHomePage"
                 android:padding="@dimen/defaultParagraphSpacing"
                 android:text="@string/aboutRecyclingRaccoonsDescription"
                 android:textAlignment="center"
@@ -105,18 +106,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/exitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/exit"
-        android:onClick="toHomePage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
     <LinearLayout
         android:id="@+id/navBarConstraint"
         android:layout_width="match_parent"
@@ -129,17 +118,21 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/houseButton2"
+            android:id="@+id/houseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/home"
             app:srcCompat="@drawable/house_small" />
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
             android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
             app:srcCompat="@drawable/camera_small" />
 
         <ImageButton
