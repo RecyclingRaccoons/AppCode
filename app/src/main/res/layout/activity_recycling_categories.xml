@@ -143,46 +143,61 @@
         app:layout_constraintStart_toStartOf="@+id/metalButton"
         app:layout_constraintTop_toTopOf="@+id/metalButton" />
 
-    <ImageButton
-        android:id="@+id/infoButton2"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/info"
+    <LinearLayout
+        android:id="@+id/navBarConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/metalButton"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/info_small" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/cameraButton2"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="40dp"
-        android:contentDescription="@string/camera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/infoButton2"
-        app:srcCompat="@drawable/camera_small" />
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
 
-    <ImageButton
-        android:id="@+id/recyclingButton2"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="40dp"
-        android:contentDescription="@string/recycle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cameraButton2"
-        app:srcCompat="@drawable/recycling_small" />
+        <ImageButton
+            android:id="@+id/recycleButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
 
-    <ImageButton
-        android:id="@+id/settingsButton2"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="40dp"
-        android:contentDescription="@string/settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/recyclingButton2"
-        app:srcCompat="@drawable/settings_small" />
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/info"
+            android:onClick="toHomePage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/references"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/info_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

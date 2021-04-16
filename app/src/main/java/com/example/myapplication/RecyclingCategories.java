@@ -18,4 +18,15 @@ public class RecyclingCategories extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void toHomePage(View v) {
+        Intent toHome = new Intent(this, MainActivity.class);
+        startActivity(toHome);
+    }
+
+    public void recyclingMainPage(View v) {
+        Intent toCategories = new Intent(this, RecyclingCategories.class);
+        startActivity(toCategories);
+    }
+
 }

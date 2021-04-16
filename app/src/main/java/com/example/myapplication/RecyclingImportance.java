@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -45,7 +46,7 @@ public class RecyclingImportance extends AppCompatActivity {
                 energyB.setVisibility(View.GONE);
                 exit.setVisibility(View.VISIBLE);
             }
-    });
+        });
 
         incinerator = findViewById(R.id.incineratorInfo);
         incineratorB = findViewById(R.id.incinerator);
@@ -111,4 +112,15 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
-    }}
+    }
+
+    public void toHomePage(View v) {
+        Intent toHome = new Intent(this, MainActivity.class);
+        startActivity(toHome);
+    }
+
+    public void recyclingMainPage(View v) {
+        Intent toCategories = new Intent(this, RecyclingCategories.class);
+        startActivity(toCategories);
+    }
+}
