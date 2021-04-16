@@ -106,18 +106,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/exitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/exit"
-        android:onClick="toHomePage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
     <LinearLayout
         android:id="@+id/navBarConstraint"
         android:layout_width="match_parent"
