@@ -123,6 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@string/home"
+            android:onClick="toHomePage"
             app:srcCompat="@drawable/house_small" />
 
         <ImageButton
