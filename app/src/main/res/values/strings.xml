@@ -52,9 +52,20 @@
     <string name="metalCategory">Metal</string>
     <string name="metalCategoryCD">Metal Bars</string>
 
+    <string name="recyclingImportance">Recycling Importance</string>
+    <string name="importanceInstructions">Click on the circles on each picture to learn more about why recycling is important</string>
+    <string name="environmentDescription">Picture that shows environmental impact of recycling</string>
     <string name="landfill">Landfills</string>
     <string name="incinerator">Incinerator</string>
     <string name="resources">Resources</string>
     <string name="energy">Energy</string>
-    <string name="landfill_info">This is a test</string>
+    <string name="landfill_info">Recycling reduces the amount of waste in landfills,
+        a big contributor of methane in the atmosphere.</string>
+    <string name="incinerator_info">Recycling reduces the use of incineration.
+        The incineration of landfill waste releases many greenhouse gases into the atmosphere,
+        a big contributor to global warming.</string>
+    <string name="resources_info">Recycling conserves natural resources which are in limited supply.</string>
+    <string name="energy_info">Recycling conserves energy.
+        It takes less energy to recycle materials than to produce products out of raw material
+        since recyclable materials have already been processed.</string>
 </resources>
