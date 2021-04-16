@@ -58,10 +58,6 @@
     <string name="recyclingImportance">Recycling Importance</string>
     <string name="importanceInstructions">Click on the circles on each picture to learn more about why recycling is important</string>
     <string name="environmentDescription">Picture that shows environmental impact of recycling</string>
-    <string name="landfill">Landfills</string>
-    <string name="incinerator">Incinerator</string>
-    <string name="resources">Resources</string>
-    <string name="energy">Energy</string>
     <string name="landfill_info">Recycling reduces the amount of waste in landfills,
         a big contributor of methane in the atmosphere.</string>
     <string name="incinerator_info">Recycling reduces the use of incineration.
