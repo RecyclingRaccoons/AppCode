@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".RecyclingCategories"></activity>
-        <activity android:name=".RecyclingImportance"></activity>
-        <activity android:name=".AboutUsPage"></activity>
+        <activity android:name=".GlassPage"></activity>
+        <activity android:name=".RecyclingCategories" />
+        <activity android:name=".RecyclingImportance" />
+        <activity android:name=".AboutUsPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
