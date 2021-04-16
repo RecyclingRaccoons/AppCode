@@ -8,10 +8,177 @@
     android:gravity="center">
 
 
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="604dp"
+        android:layout_height="740dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/environmentPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="125dp"
+            android:contentDescription="@string/environmentDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/landfill_img" />
+
+        <ImageButton
+            android:id="@+id/exitBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginBottom="395dp"
+            android:contentDescription="@string/exit"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <Button
+            android:id="@+id/landfill"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="222dp"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="342dp"
+            android:layout_marginBottom="201dp"
+            android:background="@drawable/circle_button"
+            android:text="@string/landfill"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/landfillInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="304dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginBottom="210dp"
+            android:background="#ffffff"
+            android:text="@string/landfill_info"
+            android:textSize="24sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.344"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.994" />
+
+        <Button
+            android:id="@+id/incinerator"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_above="@null"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="270dp"
+            android:layout_marginBottom="-69dp"
+            android:background="@drawable/circle_button"
+            android:text="@string/incinerator"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/incineratorInfo"
+            android:layout_width="602dp"
+            android:layout_height="246dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="87dp"
+            android:background="#ffffff"
+            android:text="@string/incinerator_info"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/resources"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="504dp"
+            android:layout_marginTop="202dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="215dp"
+            android:background="@drawable/circle_button"
+            android:text="@string/resources"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/resourcesInfo"
+            android:layout_width="600dp"
+            android:layout_height="241dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="87dp"
+            android:background="#ffffff"
+            android:text="@string/resources_info"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/energy"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="298dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="264dp"
+            android:layout_marginBottom="325dp"
+            android:background="@drawable/circle_button"
+            android:text="@string/energy"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/energyInfo"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            android:layout_alignTop="@+id/environmentPicture"
+            android:layout_alignBottom="@+id/environmentPicture"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="127dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="91dp"
+            android:background="#ffffff"
+            android:text="@string/energy_info"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/recyclingImportanceTitle"
-        android:layout_width="602dp"
-        android:layout_height="100dp"
+        android:layout_width="606dp"
+        android:layout_height="62dp"
         android:layout_marginTop="24dp"
         android:text="@string/recyclingImportance"
         android:textAlignment="center"
@@ -27,97 +194,55 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="TextView"
+        android:layout_marginTop="8dp"
+        android:text="@string/importanceInstructions"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
 
-    <Button
-        android:id="@+id/landfill"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="540dp"
-        android:background="@drawable/circle_button"
-        android:text="@string/landfill"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/incinerator"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="636dp"
-        android:background="@drawable/circle_button"
-        android:text="@string/incinerator"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/resources"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginTop="652dp"
-        android:background="@drawable/circle_button"
-        android:text="@string/resources"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/energy"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="464dp"
-        android:layout_marginTop="660dp"
-        android:background="@drawable/circle_button"
-        android:text="@string/energy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/testVisible"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="288dp"
-        android:text="@string/landfill_info"
-        android:textSize="24sp"
-        android:visibility="gone"
+    <ImageButton
+        android:id="@+id/infoButton3"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:contentDescription="@string/info"
+        android:onClick="exitToHome"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/info_small" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="610dp"
-        android:layout_height="152dp"
-        android:layout_marginBottom="4dp"
+    <ImageButton
+        android:id="@+id/cameraButton3"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="52dp"
+        android:contentDescription="@string/camera"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toEndOf="@+id/infoButton3"
+        app:srcCompat="@drawable/camera_small" />
 
-        <ImageButton
-            android:id="@+id/recycleButton2"
-            android:layout_width="115dp"
-            android:layout_height="115dp"
-            android:contentDescription="@string/recycle"
-            android:onClick="recyclingMainPage"
-            app:srcCompat="@drawable/recycling_small"
-            tools:layout_editor_absoluteX="302dp"
-            tools:layout_editor_absoluteY="35dp" />
+    <ImageButton
+        android:id="@+id/recycleButton2"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="52dp"
+        android:contentDescription="@string/recycle"
+        android:onClick="recyclingMainPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cameraButton3"
+        app:srcCompat="@drawable/recycling_small" />
 
-        <ImageButton
-            android:id="@+id/cameraButton2"
-            android:layout_width="115dp"
-            android:layout_height="115dp"
-            android:contentDescription="@string/camera"
-            app:srcCompat="@drawable/camera_small"
-            tools:layout_editor_absoluteX="138dp"
-            tools:layout_editor_absoluteY="35dp" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="36dp"
+        android:contentDescription="@string/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycleButton2"
+        app:srcCompat="@drawable/settings_small" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
