@@ -29,11 +29,33 @@
                 android:textSize="@dimen/h1Size"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView4"
+            <ImageView
+                android:id="@+id/glassImage"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:contentDescription="Wine Glass"
+                app:srcCompat="@drawable/real_glass_for_glass_page" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_marginLeft="@dimen/topMargin"
+                android:layout_marginRight="@dimen/topMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/indentificationHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/identificationHeader"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/teal_700"
+                    android:textSize="@dimen/h2Size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

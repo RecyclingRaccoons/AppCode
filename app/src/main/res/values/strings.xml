@@ -69,6 +69,8 @@
         since recyclable materials have already been processed.</string>
 
     // Glass Information Page
+    <string name="identificationHeader">How to identify: </string>
+    <string name="glassIdentificationInfo"></string>
 
     // Paper Information Page
     <string name="paperHeader">Paper</string>
