@@ -8,178 +8,473 @@
     android:gravity="center">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/recyclingImportanceTitle"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/topMargin"
-            android:text="@string/recyclingImportance"
-            android:textAlignment="center"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/h2Size"
-            android:textStyle="bold" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/instructions"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/defaultParagraphSpacing"
-            android:layout_marginBottom="@dimen/defaultParagraphSpacing"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="@string/importanceInstructions"
-            android:textAlignment="center"
-            android:textSize="@dimen/defaultParagraphTextSize"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
+            <TextView
+                android:id="@+id/recyclingImportanceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:text="@string/recyclingImportance"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h2Size"
+                android:textStyle="bold" />
 
-        <RelativeLayout
-            android:id="@+id/relativelayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/defaultParagraphSpacing"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/importanceInstructions"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
+
+            <TextView
+                android:id="@+id/environmentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/defaultParagraphSpacing"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/environmentTitle"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
+
+            <RelativeLayout
+                android:id="@+id/environment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/environmentPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/environmentDescription"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/landfill_img" />
+
+                <ImageButton
+                    android:id="@+id/exitBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/environmentPicture"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="395dp"
+                    android:contentDescription="@string/exit"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/btn_dialog" />
+
+                <Button
+                    android:id="@+id/landfill"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/environmentPicture"
+                    android:layout_alignBottom="@+id/environmentPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="222dp"
+                    android:layout_marginTop="216dp"
+                    android:layout_marginEnd="342dp"
+                    android:layout_marginBottom="201dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/landfillInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/landfill_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/incinerator"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/environmentPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="292dp"
+                    android:layout_marginTop="384dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/incineratorInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/incinerator_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/resources"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/environmentPicture"
+                    android:layout_alignBottom="@+id/environmentPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="504dp"
+                    android:layout_marginTop="202dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginBottom="215dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/resourcesInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/resources_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/energy"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignTop="@+id/environmentPicture"
+                    android:layout_alignBottom="@+id/environmentPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="298dp"
+                    android:layout_marginTop="92dp"
+                    android:layout_marginEnd="264dp"
+                    android:layout_marginBottom="325dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/energyInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/energy_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/economicTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/defaultParagraphSpacing"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/economicTitle"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
+
+            <RelativeLayout
+                android:id="@+id/economic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/economicPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/economicDescription"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/recycling_workers" />
+
+                <ImageButton
+                    android:id="@+id/exitBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/economicPicture"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="395dp"
+                    android:contentDescription="@string/exit"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/btn_dialog" />
+
+                <Button
+                    android:id="@+id/circularEcon"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/economicPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="162dp"
+                    android:layout_marginEnd="395dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/circularEconInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/circular_econ_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/jobs"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/economicPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="395dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="167dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/jobsInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/jobs_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/properRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/defaultParagraphSpacing"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/recycleProperly"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
 
             <ImageView
-                android:id="@+id/environmentPicture"
-                android:layout_width="wrap_content"
+                android:id="@+id/sadRecycling"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/environmentDescription"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/landfill_img" />
-
-            <ImageButton
-                android:id="@+id/exitBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/environmentPicture"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="-4dp"
-                android:layout_marginBottom="395dp"
-                android:contentDescription="@string/exit"
-                android:visibility="gone"
-                app:srcCompat="@android:drawable/btn_dialog" />
-
-            <Button
-                android:id="@+id/landfill"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_alignTop="@+id/environmentPicture"
-                android:layout_alignBottom="@+id/environmentPicture"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="222dp"
-                android:layout_marginTop="216dp"
-                android:layout_marginEnd="342dp"
-                android:layout_marginBottom="201dp"
-                android:background="@drawable/circle_button"
-                android:text="@null"
-                android:visibility="visible" />
+                android:contentDescription="@string/sad_recycling_description"
+                app:srcCompat="@drawable/sad_recycling" />
 
             <TextView
-                android:id="@+id/landfillInfo"
-                android:layout_width="wrap_content"
+                android:id="@+id/properRecyclingInfo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="#ffffff"
-                android:padding="20sp"
-                android:text="@string/landfill_info"
-                android:textSize="@dimen/defaultParagraphTextSize"
-                android:visibility="gone" />
-
-            <Button
-                android:id="@+id/incinerator"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_above="@null"
-                android:layout_alignTop="@+id/environmentPicture"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="292dp"
-                android:layout_marginTop="384dp"
-                android:layout_marginEnd="270dp"
-                android:layout_marginBottom="-69dp"
-                android:background="@drawable/circle_button"
-                android:text="@null"
-                android:visibility="visible" />
+                android:text="@string/recycleProperly_info" />
 
             <TextView
-                android:id="@+id/incineratorInfo"
-                android:layout_width="wrap_content"
+                android:id="@+id/processTitle"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="#ffffff"
-                android:padding="20sp"
-                android:text="@string/incinerator_info"
+                android:layout_marginTop="@dimen/defaultParagraphSpacing"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/processTitle"
+                android:textAlignment="center"
                 android:textSize="@dimen/defaultParagraphTextSize"
-                android:visibility="gone" />
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
 
-            <Button
-                android:id="@+id/resources"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_alignTop="@+id/environmentPicture"
-                android:layout_alignBottom="@+id/environmentPicture"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="504dp"
-                android:layout_marginTop="202dp"
-                android:layout_marginEnd="58dp"
-                android:layout_marginBottom="215dp"
-                android:background="@drawable/circle_button"
-                android:text="@null"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/resourcesInfo"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/process"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="#ffffff"
-                android:padding="20sp"
-                android:text="@string/resources_info"
-                android:textSize="@dimen/defaultParagraphTextSize"
-                android:visibility="gone" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <Button
-                android:id="@+id/energy"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_alignTop="@+id/environmentPicture"
-                android:layout_alignBottom="@+id/environmentPicture"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="298dp"
-                android:layout_marginTop="92dp"
-                android:layout_marginEnd="264dp"
-                android:layout_marginBottom="325dp"
-                android:background="@drawable/circle_button"
-                android:text="@null"
-                android:visibility="visible" />
+                <ImageView
+                    android:id="@+id/processPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/processDescription"
+                    app:srcCompat="@drawable/recycling_process" />
 
-            <TextView
-                android:id="@+id/energyInfo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="#ffffff"
-                android:padding="20sp"
-                android:text="@string/energy_info"
-                android:textSize="@dimen/defaultParagraphTextSize"
-                android:visibility="gone" />
+                <ImageButton
+                    android:id="@+id/exitBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/processPicture"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="561dp"
+                    android:contentDescription="@string/exit"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/btn_dialog" />
 
-        </RelativeLayout>
+                <Button
+                    android:id="@+id/collection"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/processPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="77dp"
+                    android:layout_marginTop="397dp"
+                    android:layout_marginEnd="485dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/collectionInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/collection_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/cleaning"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/processPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="279dp"
+                    android:layout_marginTop="225dp"
+                    android:layout_marginEnd="283dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/cleaningInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/cleaning_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/manufacturing"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/processPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="466dp"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginEnd="96dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/manufacturingInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/manufacturing_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/newProduct"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_above="@null"
+                    android:layout_alignTop="@+id/processPicture"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="272dp"
+                    android:layout_marginTop="565dp"
+                    android:layout_marginEnd="290dp"
+                    android:layout_marginBottom="-69dp"
+                    android:background="@drawable/circle_button"
+                    android:text="@null"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/newProductInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:padding="20sp"
+                    android:text="@string/new_product_info"
+                    android:textSize="@dimen/defaultParagraphTextSize"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:id="@+id/navBarConstraint"
