@@ -92,5 +92,31 @@
     <string name="refsInAPA"></string>
 
     // Glass Information Page
+    <string name="identificationHeader">How to identify: </string>
+    <string name="glassIdentificationInfo"></string>
+
+    // Paper Information Page
+    <string name="paperHeader">Paper</string>
+    <string name="examples">Examples:</string>
+    <string name="newspaper">• Newspaper</string>
+    <string name="cup">• Cup</string>
+    <string name="cardboard">• Cardboard Box</string>
+    <string name="book">• Book</string>
+    <string name="printer">• Printer Paper</string>
+    <string name="card">• Greeting Card</string>
+    <string name="carton">• Egg Carton</string>
+    <string name="identify">How to Identify:</string>
+    <string name="bend">• Generally Easy to Bend</string>
+    <string name="pencil">• Pencil marks are easy to see on paper</string>
+    <string name="paperColor">• Generally white or brown in color</string>
+    <string name="recycleHowTo">How to Recycle:</string>
+    <string name="step1">• Most town/city recycling facilities accept paper in their trucks</string>
+    <string name="step2">• Grocery stores may accept paper bags</string>
+    <string name="step3">• Large cardboard boxes can be thrown into large junk bins</string>
+    <string name="reuseIdeas">Ideas to Reuse:</string>
+    <string name="origami">• Printer paper can be used for origami and crafts</string>
+    <string name="repackage">• Cardboard boxes can be used to package other items and ship them</string>
+    <string name="scratchPaper">• Paper can be used for rough work and other homework assignments</string>
+
 
 </resources>

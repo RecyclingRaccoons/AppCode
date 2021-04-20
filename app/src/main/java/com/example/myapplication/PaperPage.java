@@ -6,17 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class RecyclingCategories extends AppCompatActivity {
+public class PaperPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycling_categories);
-    }
-
-    public void exitToHome(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_paper_page);
     }
 
     public void toHomePage(View v) {
@@ -28,10 +23,4 @@ public class RecyclingCategories extends AppCompatActivity {
         Intent toCategories = new Intent(this, RecyclingCategories.class);
         startActivity(toCategories);
     }
-
-    public void toPaperPage(View v) {
-        Intent toPaper = new Intent(this, PaperPage.class);
-        startActivity(toPaper);
-    }
-
 }

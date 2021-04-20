@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context=".PaperPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paperHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/topMargin"
+                android:text="@string/paperHeader"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h1Size"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/paperImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                app:srcCompat="@drawable/paper" />
+
+            <TextView
+                android:id="@+id/examplesHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/examples"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newspaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/newspaper"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/cup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/cup"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/cardboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/cardboard"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/origami"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/printer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/printer"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/card"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/carton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/carton"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/identifyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/identify"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/bend"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/pencil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/pencil"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/paperColor"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/recycleHowTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/recycleHowTo"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/step1"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/step2"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/step3"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/reuseIdeas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/reuseIdeas"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/origami"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/step1"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/repackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/repackage"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/homework"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:layout_marginBottom="200dp"
+                android:text="@string/scratchPaper"
+                android:textSize="27sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navBarConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/houseButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:onClick="toHomePage"
+            app:srcCompat="@drawable/house_small" />
+
+        <ImageButton
+            android:id="@+id/cameraButton3"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
+
+        <ImageButton
+            android:id="@+id/recycleButton2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
