@@ -57,6 +57,15 @@
     // Recycling Importance
     <string name="recyclingImportance">Recycling Importance</string>
     <string name="importanceInstructions">Click on the circles on each picture to learn more about why recycling is important</string>
+    <string name="environmentTitle">Environmental Impact</string>
+    <string name="economicTitle">Economic Impact</string>
+    <string name="recycleProperly">Why is it important to recycle properly?</string>
+    <string name="sad_recycling_description">This is a picture of a sad recycling bin</string>
+    <string name="recycleProperly_info">To ensure that the recycling process runs successfully,
+        it is important to understand how it works and what can be recycled.
+        One product that is recycled improperly can contaminate an entire bale of material (How to Recycle and Why You Should Do It, 2019).
+        This contamination increase costs to ship the material to a landfill and damage equipment used in recycling (US EPA, 2017). </string>
+    <string name="processTitle">Recycling Process</string>
     <string name="environmentDescription">Picture that shows environmental impact of recycling</string>
     <string name="landfill_info">Recycling reduces the amount of waste in landfills,
         a big contributor of methane in the atmosphere.</string>
@@ -67,6 +76,20 @@
     <string name="energy_info">Recycling conserves energy.
         It takes less energy to recycle materials than to produce products out of raw material
         since recyclable materials have already been processed.</string>
+    <string name="economicDescription">Picture that shows the economic impact of recycling</string>
+    <string name="circular_econ_info">Recycling allows for materials to be efficiently used to their full potential.
+        The recycling cycle contributes to a sustainable circular economy.</string>
+    <string name="jobs_info">The recycling industry provides many jobs.
+        In 2020, recycling provided 681,000 jobs and $37.8 billion in wages.</string>
+    <string name="processDescription">Picture that shows the recycling process</string>
+    <string name="collection_info">Firstly, the materials are collected by the town or a recycling facility</string>
+    <string name="cleaning_info">Secondly, the materials are sorted, cleaned, and processed into usable manufacturing material.</string>
+    <string name="manufacturing_info">Thirdly, the processed materials are sold to manufacturing companies just like any raw material.</string>
+    <string name="new_product_info">Fourthly, the materials are manufactured into new products and the cycle continues.</string>
+
+    // References
+    <string name="referencesTitle">References</string>
+    <string name="refsInAPA"></string>
 
     // Glass Information Page
 
