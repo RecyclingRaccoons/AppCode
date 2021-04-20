@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="topMargin">75dp</dimen>
-    <dimen name="leftMargin">20dp</dimen>
+    <dimen name="leftMargin">30dp</dimen>
     <dimen name="h1Size">80sp</dimen>
     <dimen name="h2Size">55sp</dimen>
     <dimen name="defaultParagraphTextSize">30sp</dimen>
