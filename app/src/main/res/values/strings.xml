@@ -95,5 +95,8 @@
     <string name="repackage">• Cardboard boxes can be used to package other items and ship them</string>
     <string name="scratchPaper">• Paper can be used for rough work and other homework assignments</string>
 
+    // Plastic Information Page
+    <string name="plasticHeader">Plastic</string>
+    <string name="plasticIntroduction">Plastics are generally organized into different categories. Please select one to learn  more about it.</string>
 
 </resources>
