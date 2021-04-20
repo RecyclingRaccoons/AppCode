@@ -70,4 +70,9 @@
 
     // Glass Information Page
 
+    // Paper Information Page
+    <string name="paperHeader">Paper</string>
+    <string name="examples">Examples:</string>
+    <string name="newspaper">     • Newspaper</string>
+
 </resources>
