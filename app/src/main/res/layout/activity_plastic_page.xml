@@ -17,34 +17,145 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/plasticHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
+                android:text="@string/plasticHeader"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/h1Size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/plasticIntroduction"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/category1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category1Page"
+                android:text="@string/category1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category2Page"
+                android:text="@string/category2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category3Page"
+                android:text="@string/category3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category4Page"
+                android:text="@string/category4"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category5Page"
+                android:text="@string/category5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="category6Page"
+                android:text="@string/category6"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/category7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="category7Page"
+                android:text="@string/category7"
+                android:textSize="20sp" />
+
+        </LinearLayout>
     </ScrollView>
 
     <LinearLayout
+        android:id="@+id/navBarConstraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/plasticHeader"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/houseButton2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/topMargin"
-            android:text="@string/plasticHeader"
-            android:textAlignment="center"
-            android:textColor="@color/teal_700"
-            android:textSize="@dimen/h1Size"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:onClick="toHomePage"
+            app:srcCompat="@drawable/house_small" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="15dp"
-            android:text="@string/plasticIntroduction"
-            android:textSize="25sp" />
+        <ImageButton
+            android:id="@+id/cameraButton3"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
 
+        <ImageButton
+            android:id="@+id/recycleButton2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
