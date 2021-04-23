@@ -129,5 +129,9 @@
     <string name="category6">Category 6</string>
     <string name="category7">Category 7</string>
 
+    // Camera Page
+    <string name="camButtonDes">This button brings the user to a camera</string>
+    <string name="imgButtonDes">This button brings the user to their photo gallery</string>
+
 
 </resources>

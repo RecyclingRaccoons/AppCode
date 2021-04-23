@@ -2,65 +2,38 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/CameraPage"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/topMargin"
-        android:text="@string/intro_name"
-        android:textAlignment="center"
-        android:textColor="@color/teal_700"
-        android:textSize="@dimen/h1Size"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/cameraOption"
+        android:layout_width="319dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="140dp"
+        android:contentDescription="@string/camButtonDes"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retro_camera" />
 
-    <Button
-        android:id="@+id/aboutUsButton"
-        android:layout_width="602dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="aboutUsPage"
-        android:text="@string/aboutUs"
-        android:textSize="@dimen/defaultParagraphTextSize"
+    <ImageView
+        android:id="@+id/imageOption"
+        android:layout_width="319dp"
+        android:layout_height="296dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="140dp"
+        android:contentDescription="@string/imgButtonDes"
+        app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/recyclingImportance"
-        android:layout_width="609dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="recyclingMainPage2"
-        android:text="@string/importance"
-        android:textSize="@dimen/defaultParagraphTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutUsButton" />
-
-    <Button
-        android:id="@+id/references"
-        android:layout_width="602dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:text="@string/references"
-        android:textSize="@dimen/defaultParagraphTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclingImportance" />
+        app:layout_constraintTop_toBottomOf="@+id/cameraOption"
+        app:srcCompat="@drawable/image_gallery" />
 
     <LinearLayout
         android:id="@+id/navBarConstraint"

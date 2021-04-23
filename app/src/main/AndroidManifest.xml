@@ -22,6 +22,7 @@
         <activity android:name=".RecyclingCategories" />
         <activity android:name=".RecyclingImportance" />
         <activity android:name=".AboutUsPage" />
+        <activity android:name=".CameraPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

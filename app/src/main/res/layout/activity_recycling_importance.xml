@@ -502,6 +502,7 @@
             android:layout_height="115dp"
             android:layout_weight="1"
             android:contentDescription="@string/camera"
+            android:onClick="cameraPage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/infoButton"
             app:srcCompat="@drawable/camera_small" />

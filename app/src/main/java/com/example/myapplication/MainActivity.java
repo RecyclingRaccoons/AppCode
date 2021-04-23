@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(toHome);
     }
 
+    public void cameraPage(View v) {
+        Intent toCamera = new Intent(this, CameraPage.class);
+        startActivity(toCamera);
+    }
+
 }
