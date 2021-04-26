@@ -29,6 +29,11 @@ public class RecyclingCategories extends AppCompatActivity {
         startActivity(toCategories);
     }
 
+    public void cameraPage(View v) {
+        Intent toCamera = new Intent(this, CameraPage.class);
+        startActivity(toCamera);
+    }
+
     public void toPaperPage(View v) {
         Intent toPaper = new Intent(this, PaperPage.class);
         startActivity(toPaper);

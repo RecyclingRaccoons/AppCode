@@ -24,4 +24,9 @@ public class GlassPage extends AppCompatActivity {
         startActivity(toCategories);
     }
 
+    public void cameraPage(View v) {
+        Intent toCamera = new Intent(this, CameraPage.class);
+        startActivity(toCamera);
+    }
+
 }
