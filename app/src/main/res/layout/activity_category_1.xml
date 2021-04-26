@@ -165,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="200dp"
                 android:text="@string/homemade"
                 android:textSize="27sp" />
 
