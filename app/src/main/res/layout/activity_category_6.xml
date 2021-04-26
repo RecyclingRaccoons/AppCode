@@ -18,11 +18,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageButton
+                android:id="@+id/exitButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/returnPlastic"
+                android:onClick="toPlasticPage"
+                app:srcCompat="@android:drawable/btn_dialog" />
+
             <TextView
                 android:id="@+id/categoryHeader"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/topMargin"
+                android:layout_marginTop="@dimen/topMargin2"
                 android:text="@string/catHeader6"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"

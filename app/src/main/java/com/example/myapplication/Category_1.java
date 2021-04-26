@@ -29,4 +29,9 @@ public class Category_1 extends AppCompatActivity {
         startActivity(toCamera);
     }
 
+    public void toPlasticPage(View v) {
+        Intent toPlastic = new Intent(this, PlasticPage.class);
+        startActivity(toPlastic);
+    }
+
 }

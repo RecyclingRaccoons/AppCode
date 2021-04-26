@@ -167,6 +167,7 @@
     <string name="identify">How to Identify:</string>
     <string name="recycleHowTo">How to Recycle:</string>
     <string name="reuseIdeas">Ideas to Reuse:</string>
+    <string name="returnPlastic">Return to Plastic Page</string>
 
     // Category1
     <string name="catHeader1">Polyethylene Terephthalate</string>
