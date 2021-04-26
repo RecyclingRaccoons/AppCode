@@ -97,7 +97,6 @@
 
     // Paper Information Page
     <string name="paperHeader">Paper</string>
-    <string name="examples">Examples:</string>
     <string name="newspaper">• Newspaper</string>
     <string name="cup">• Cup</string>
     <string name="cardboard">• Cardboard Box</string>
@@ -105,15 +104,12 @@
     <string name="printer">• Printer Paper</string>
     <string name="card">• Greeting Card</string>
     <string name="carton">• Egg Carton</string>
-    <string name="identify">How to Identify:</string>
     <string name="bend">• Generally Easy to Bend</string>
     <string name="pencil">• Pencil marks are easy to see on paper</string>
     <string name="paperColor">• Generally white or brown in color</string>
-    <string name="recycleHowTo">How to Recycle:</string>
     <string name="step1">• Most town/city recycling facilities accept paper in their trucks</string>
     <string name="step2">• Grocery stores may accept paper bags</string>
     <string name="step3">• Large cardboard boxes can be thrown into large junk bins</string>
-    <string name="reuseIdeas">Ideas to Reuse:</string>
     <string name="origami">• Printer paper can be used for origami and crafts</string>
     <string name="repackage">• Cardboard boxes can be used to package other items and ship them</string>
     <string name="scratchPaper">• Paper can be used for rough work and other homework assignments</string>
@@ -133,5 +129,103 @@
     <string name="camButtonDes">This button brings the user to a camera</string>
     <string name="imgButtonDes">This button brings the user to their photo gallery</string>
 
+    // Common Category Attributes
+    <string name="examples">Examples:</string>
+    <string name="identify">How to Identify:</string>
+    <string name="recycleHowTo">How to Recycle:</string>
+    <string name="reuseIdeas">Ideas to Reuse:</string>
+
+    // Category1
+    <string name="catHeader1">Polyethylene Terephthalate</string>
+    <string name="bottles">• Soda/Water Bottles</string>
+    <string name="beanBags">• Bean Bags</string>
+    <string name="jars">• Plastic Jars</string>
+    <string name="clothes">• Clothes</string>
+    <string name="tough">• Tough Material</string>
+    <string name="bent">• Discolors when bent</string>
+    <string name="stepPET1">• Most, if not all, town/city recycling facilities accept this type of plastics in their trucks</string>
+    <string name="stepPET2">• Caps are generally removed prior to recycling</string>
+    <string name="drink">• BPA free bottles can be reused to drink water</string>
+    <string name="mentos">• Bottles can be used for science experiments, such as the mentos and coke experiment</string>
+    <string name="homemade">• Homemade sauces and food items can be stored in used (and washed) plastic containers</string>
+
+    // Category2
+    <string name="catHeader2">High-Density Polyethylene</string>
+    <string name="milk">• Milk Bottles</string>
+    <string name="bleach">• Bleach and Detergent Bottles</string>
+    <string name="cap">• Bottle Caps</string>
+    <string name="soap">• Soap Bottles</string>
+    <string name="rigid">• Tough and Rigid Material</string>
+    <string name="spring">• Springs back to original shape when bent</string>
+    <string name="stepHDPE1">• Most, if not all, town/city recycling facilities accept this type of plastics in their trucks</string>
+    <string name="stepHDPE2">• Caps are generally removed prior to recycling</string>
+    <string name="store">• Foods could be stored in bottles, as long as they are properly washed</string>
+    <string name="shampoo">• Soaps, shampoo, and other liquids of that type can be stored in these plastics until use</string>
+    <string name="chemicals">• It is important to be mindful of the estrogen-mimicking additive chemicals that may be present</string>
+
+    // Category3
+    <string name="catHeader3">Polyvinyl Chloride</string>
+    <string name="toys">• Toys</string>
+    <string name="tray">• Food Trays</string>
+    <string name="piping">• Pipes</string>
+    <string name="wire">• Wire Insulation</string>
+    <string name="fragile">• Fragile and easy to bend (creases form when bent)</string>
+    <string name="crinkle">• Make a cracking sound when bent (bottles especially)</string>
+    <string name="stepPVC1">• Most recycling facilities do not accept this type of plastic</string>
+    <string name="stepPVC2">• It is important to monitor local regulations regarding recycling</string>
+    <string name="pipes">• PVC pipes can be implemented in a variety of ways since they do not rust like many metals</string>
+    <string name="hazard">• It is a pretty hazardous plastic so, while it can be used, it is essential to be careful</string>
+
+    // Category4
+    <string name="catHeader4">Low-Density Polyethylene</string>
+    <string name="pBags">• Plastic Grocery Bags</string>
+    <string name="frozen">• Frozen Food Bags</string>
+    <string name="trash">• Trash Bags</string>
+    <string name="wraps">• Wraps and Coatings</string>
+    <string name="light">• Low density and weight</string>
+    <string name="flexible">• Flexible and easy to tear</string>
+    <string name="stepLDPE1">• Most recycling facilities do not accept this type of plastic</string>
+    <string name="stepLDPE2">• Grocery stores may accept plastic bags to redistribute</string>
+    <string name="parachute">• Plastic bags make a good parachute in egg drop experiments</string>
+    <string name="chokingHazard">• Bags are hard to breathe in, so caution is required</string>
+
+    // Category5
+    <string name="catHeader5">Polypropylene</string>
+    <string name="soup">• Soup Containers</string>
+    <string name="tub">• Tubs for Butter or Margarine</string>
+    <string name="cap2">• Bottle Caps</string>
+    <string name="glassCap">• Glass Jar Caps</string>
+    <string name="strong">• Quite durable and sometimes hard to break</string>
+    <string name="shatter">• Will shatter if broken</string>
+    <string name="stepPP1">• Most recycling facilities do not accept this type of plastic</string>
+    <string name="stepPP2">• More effective to reuse</string>
+    <string name="extraStorage">• Used containers can be used to store foods</string>
+    <string name="drinkWater">• Thermoses and reusable bottles often use Polypropylene because of its heat resistance</string>
+
+    // Category6
+    <string name="catHeader6">Polystyrene</string>
+    <string name="peanuts">• Packing Peanuts</string>
+    <string name="toGo">• Food Containers and To-Go Boxes</string>
+    <string name="dispose">• Disposable Cups</string>
+    <string name="plate">• Trays and Plates (Styrofoam Products)</string>
+    <string name="breakable">• Rigid but easy to break</string>
+    <string name="pull">• Easy to tear or pull apart</string>
+    <string name="stepPS1">• Styrofoam should not be recycled</string>
+    <string name="stepPS2">• Reusing is also difficult</string>
+    <string name="parcel">• Can be used to pack items in a parcel to ship</string>
+    <string name="children">• It is hazardous (should be kept away from children) and is hard to reuse</string>
+
+    // Category 7
+    <string name="catHeader7">Other Plastics</string>
+    <string name="PC">• Polycarbonate</string>
+    <string name="glasses">• Reading Glasses</string>
+    <string name="CDs">• CDs and DVDs</string>
+    <string name="wires">• Some wires</string>
+    <string name="hard">• Hard material and likely to shatter</string>
+    <string name="disposal">• Often found in materials that require special disposal</string>
+    <string name="stepOther1">• Polycarbonate and other plastics should not be recycled</string>
+    <string name="stepOther2">• If not reused, these plastics should be thrown uun the trash</string>
+    <string name="wipe">• Some CDs allow a user to wipe the existing data and insert new data</string>
+    <string name="dangerPC">• Polycarbonate is especially dangerous due to its cancerous properties and its use has been widely discontinued</string>
 
 </resources>

@@ -21,7 +21,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/paperHeader"
+                android:id="@+id/categoryHeader"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/topMargin"
@@ -50,7 +50,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/newspaper"
+                android:id="@+id/example1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
@@ -117,7 +117,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/bend"
+                android:id="@+id/identify1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
@@ -125,7 +125,7 @@
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/pencil"
+                android:id="@+id/identify2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
@@ -187,7 +187,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/origami"
+                android:id="@+id/reuse1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
@@ -195,7 +195,7 @@
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/repackage"
+                android:id="@+id/reuse2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
@@ -203,7 +203,7 @@
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/homework"
+                android:id="@+id/reuse3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
