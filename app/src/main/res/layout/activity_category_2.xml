@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/HDPE"
     tools:context=".Category_2">
 
     <ScrollView
@@ -34,6 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="45dp"
+                android:contentDescription="@string/HDPE"
                 app:srcCompat="@drawable/hdpe" />
 
             <TextView

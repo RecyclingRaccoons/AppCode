@@ -146,6 +146,15 @@
     <string name="category6">Category 6</string>
     <string name="category7">Category 7</string>
 
+    //Plastic Images
+    <string name="PET">PET</string>
+    <string name="HDPE">HDPE</string>
+    <string name="PVC">PVC</string>
+    <string name="LDPE">LDPE</string>
+    <string name="PP">PP</string>
+    <string name="PS">PS</string>
+    <string name="Other">Other</string>
+
     // Camera Page
     <string name="camButtonDes">This button brings the user to a camera</string>
     <string name="imgButtonDes">This button brings the user to their photo gallery</string>

@@ -35,32 +35,32 @@ public class PlasticPage extends AppCompatActivity {
     }
 
     public void category2Page(View v) {
-        Intent toCategory2 = new Intent(this, Category_1.class);
+        Intent toCategory2 = new Intent(this, Category_2.class);
         startActivity(toCategory2);
     }
 
     public void category3Page(View v) {
-        Intent toCategory3 = new Intent(this, Category_1.class);
+        Intent toCategory3 = new Intent(this, Category_3.class);
         startActivity(toCategory3);
     }
 
     public void category4Page(View v) {
-        Intent toCategory4 = new Intent(this, Category_1.class);
+        Intent toCategory4 = new Intent(this, Category_4.class);
         startActivity(toCategory4);
     }
 
     public void category5Page(View v) {
-        Intent toCategory5 = new Intent(this, Category_1.class);
+        Intent toCategory5 = new Intent(this, Category_5.class);
         startActivity(toCategory5);
     }
 
     public void category6Page(View v) {
-        Intent toCategory6 = new Intent(this, Category_1.class);
+        Intent toCategory6 = new Intent(this, Category_6.class);
         startActivity(toCategory6);
     }
 
     public void category7Page(View v) {
-        Intent toCategory7 = new Intent(this, Category_1.class);
+        Intent toCategory7 = new Intent(this, Category_7.class);
         startActivity(toCategory7);
     }
 
