@@ -1,24 +1,48 @@
 package com.example.myapplication;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class CameraPage extends AppCompatActivity {
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
     ImageButton camera;
     ImageView displayer;
-    private static final int pic_id = 123;
 
     //Follow camera tutorial:
     // https://www.geeksforgeeks.org/android-how-to-open-camera-through-intent-and-display-captured-image/
+    //https://developer.android.com/training/camera/photobasics#TaskPath
+
+    String currentPhotoPath;
+
+    private File createImageFile() throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(
+                imageFileName,
+                ".jpg",
+                storageDir
+        );
+        currentPhotoPath = image.getAbsolutePath();
+        return image;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +56,28 @@ public class CameraPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(camera_intent, pic_id);
+                startActivityForResult(camera_intent, REQUEST_IMAGE_CAPTURE);
             }
         });
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == pic_id) {
-            Bitmap photo = (Bitmap) data.getExtras()
-                    .get("data");
-            displayer.setImageBitmap(photo);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            displayer.setImageBitmap(imageBitmap);
+
+            Context context = getApplicationContext();
+            CharSequence text = "Hello toast!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+            Intent img_accept = new Intent(this, ImageAcceptance.class);
+            startActivity(img_accept);
+
         }
     }
 
