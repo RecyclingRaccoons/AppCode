@@ -111,6 +111,7 @@
         android:layout_marginTop="@dimen/defaultParagraphSpacing"
         android:layout_marginEnd="5dp"
         android:contentDescription="@string/metal"
+        android:onClick="toMetalPage"
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -49,4 +49,9 @@ public class RecyclingCategories extends AppCompatActivity {
         startActivity(toPlastic);
     }
 
+    public void toMetalPage(View v) {
+        Intent toMetal = new Intent(this, MetalPage.class);
+        startActivity(toMetal);
+    }
+
 }

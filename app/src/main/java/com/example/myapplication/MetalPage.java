@@ -14,6 +14,16 @@ public class MetalPage extends AppCompatActivity {
         setContentView(R.layout.activity_metal_page);
     }
 
+    public void toHomePage(View v) {
+        Intent toHome = new Intent(this, MainActivity.class);
+        startActivity(toHome);
+    }
+
+    public void recyclingMainPage(View v) {
+        Intent toCategories = new Intent(this, RecyclingCategories.class);
+        startActivity(toCategories);
+    }
+
     public void cameraPage(View v) {
         Intent toCamera = new Intent(this, CameraPage.class);
         startActivity(toCamera);
