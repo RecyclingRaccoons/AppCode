@@ -24,9 +24,4 @@ public class GlassPage extends AppCompatActivity {
         startActivity(toCategories);
     }
 
-    public void toPaperPage(View v) {
-        Intent toPaper = new Intent(this, PaperPage.class);
-        startActivity(toPaper);
-    }
-
 }

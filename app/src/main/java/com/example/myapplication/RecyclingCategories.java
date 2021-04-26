@@ -34,4 +34,9 @@ public class RecyclingCategories extends AppCompatActivity {
         startActivity(toPaper);
     }
 
+    public void toGlassPage(View v) {
+        Intent toGlass = new Intent(this, GlassPage.class);
+        startActivity(toGlass);
+    }
+
 }
