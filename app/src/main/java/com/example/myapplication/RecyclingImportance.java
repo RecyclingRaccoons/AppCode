@@ -262,4 +262,9 @@ public class RecyclingImportance extends AppCompatActivity {
         Intent toCategories = new Intent(this, RecyclingCategories.class);
         startActivity(toCategories);
     }
+
+    public void cameraPage(View v) {
+        Intent toCamera = new Intent(this, CameraPage.class);
+        startActivity(toCamera);
+    }
 }

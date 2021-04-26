@@ -6,22 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class AboutUsPage extends AppCompatActivity {
+public class MetalPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us_page);
-    }
-
-    public void toHomePage(View v) {
-        Intent toHome = new Intent(this, MainActivity.class);
-        startActivity(toHome);
-    }
-
-    public void recyclingMainPage(View v) {
-        Intent toCategories = new Intent(this, RecyclingCategories.class);
-        startActivity(toCategories);
+        setContentView(R.layout.activity_metal_page);
     }
 
     public void cameraPage(View v) {
