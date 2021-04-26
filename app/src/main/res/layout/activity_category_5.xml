@@ -157,6 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
+                android:layout_marginBottom="30dp"
                 android:text="@string/drinkWater"
                 android:textSize="27sp" />
 
@@ -188,6 +189,7 @@
             android:layout_height="115dp"
             android:layout_weight="1"
             android:contentDescription="@string/camera"
+            android:onClick="cameraPage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/infoButton"
             app:srcCompat="@drawable/camera_small" />
