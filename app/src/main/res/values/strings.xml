@@ -93,7 +93,24 @@
 
     // Glass Information Page
     <string name="identificationHeader">How to identify: </string>
-    <string name="glassIdentificationInfo"></string>
+    <string name="glassIdentificationInfo1">• it is transparent or translucent</string>
+    <string name="glassIdentificationInfo2">• it is hard and brittle</string>
+    <string name="jar">• A jar without the lid</string>
+    <string name="beverageBottles">• Glass beverage bottles</string>
+    <string name="wineBottles">• Wine bottles but not wine glasses</string>
+    <string name="perfumeBottles">• Perfume bottles</string>
+    <string name="beerBottles">• Beer bottles</string>
+    <string name="oliveOilBottle">• Olive oil bottle</string>
+    <string name="condimentBottles">• Condiment bottles and jars</string>
+    <string name="cleanItem">• Clean the item of any solids or liquids</string>   // How to recycle glass
+    <string name="checkContamination">• Check that your glass is not treated with chemicals or
+        covered in any type of coating. This kind of glass is not recyclable.</string>
+    <string name="checkAreaAvailability">• Check to see if glass is recyclable at your local recycling center </string>
+    <string name="separateGlass">• Some areas may require you to separate glass from other recyclable material</string>
+    <string name="throwInRecyclingBin">• Put it in the recycling bin</string>
+    <string name="store">• Use to store your own food products</string>           // Ideas how to reuse glass
+    <string name="diy">• Create a DIY project</string>
+    <string name="makeAnInstrument">• Turn it into an instrument</string>
 
     // Paper Information Page
     <string name="paperHeader">Paper</string>

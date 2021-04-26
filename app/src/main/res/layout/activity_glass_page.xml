@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/glassHeader"
@@ -34,28 +34,236 @@
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:layout_marginBottom="@dimen/defaultParagraphSpacing"
-                android:contentDescription="Wine Glass"
+                android:contentDescription="@string/glass"
                 app:srcCompat="@drawable/real_glass_for_glass_page" />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/indentificationHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/topMargin"
-                android:layout_marginRight="@dimen/topMargin"
-                android:orientation="vertical">
+                android:layout_marginStart="10dp"
+                android:text="@string/identificationHeader"
+                android:textAlignment="textStart"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/indentificationHeader"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/identificationHeader"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/teal_700"
-                    android:textSize="@dimen/h2Size"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/indentification1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/glassIdentificationInfo1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
-            </LinearLayout>
+            <TextView
+                android:id="@+id/identification2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/glassIdentificationInfo2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/examplesHeader2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/examples"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/example1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/jar"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/example2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/beverageBottles"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/example3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/wineBottles"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/example4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/perfumeBottles"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/example5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/beerBottles"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/example6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/oliveOilBottle"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/howToRecycleHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/recycleHowTo"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cleanItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/cleanItem"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/checkContamination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/checkContamination"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/checkArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/checkAreaAvailability"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/separate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/separateGlass"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/throwInBin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/defaultParagraphTextSize"
+                android:text="@string/throwInRecyclingBin"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/reuseHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/reuseIdeas"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/storeIdea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/store"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/diyIdea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/diy"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/instrumentIdea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:layout_marginBottom="150dp"
+                android:text="@string/makeAnInstrument"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navBarConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/houseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:onClick="toHomePage"
+            app:srcCompat="@drawable/house_small" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
+
+        <ImageButton
+            android:id="@+id/recycleButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
