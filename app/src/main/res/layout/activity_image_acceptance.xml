@@ -2,31 +2,44 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/CameraPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/cameraOption"
-        android:layout_width="356dp"
-        android:layout_height="324dp"
-        android:contentDescription="@string/camButtonDes"
-        app:layout_constraintBottom_toTopOf="@+id/imgOption"
+    <ImageView
+        android:id="@+id/imgDisplayer"
+        android:layout_width="542dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imgDisplayerDes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/retro_camera" />
+        tools:srcCompat="@tools:sample/avatars" />
 
-    <ImageButton
-        android:id="@+id/imgOption"
-        android:layout_width="360dp"
-        android:layout_height="302dp"
-        android:layout_marginBottom="72dp"
-        android:contentDescription="@string/imgButtonDes"
-        app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/acceptButton"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/image_gallery" />
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayer" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="112dp"
+        android:onClick="cameraPage"
+        android:text="@string/cancelButton"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplayer" />
 
     <LinearLayout
         android:id="@+id/navBarConstraint"
@@ -81,5 +94,4 @@
             app:srcCompat="@drawable/settings_small" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

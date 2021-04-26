@@ -149,6 +149,9 @@
     // Camera Page
     <string name="camButtonDes">This button brings the user to a camera</string>
     <string name="imgButtonDes">This button brings the user to their photo gallery</string>
+    <string name="imgDisplayerDes">This area displays the image the user selected</string>
+    <string name="acceptButton">Accept</string>
+    <string name="cancelButton">Cancel</string>
 
 
 </resources>
