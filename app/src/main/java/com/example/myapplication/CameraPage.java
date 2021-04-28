@@ -67,18 +67,16 @@ public class CameraPage extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             displayer.setImageBitmap(imageBitmap);
-
-            Context context = getApplicationContext();
-            CharSequence text = "Hello toast!";
-            int duration = Toast.LENGTH_SHORT;
-
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-
-            Intent img_accept = new Intent(this, ImageAcceptance.class);
-            startActivity(img_accept);
-
         }
+        Context context = getApplicationContext();
+        CharSequence text = "Hello toast!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+        Intent img_accept = new Intent(this, ImageAcceptance.class);
+        startActivity(img_accept);
     }
 
     public void toHomePage (View v){
