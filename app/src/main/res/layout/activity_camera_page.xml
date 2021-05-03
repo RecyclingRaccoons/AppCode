@@ -6,6 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imgDisplayer"
+        android:layout_width="549dp"
+        android:layout_height="617dp"
+        android:contentDescription="@string/imgDisplayerDes"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
     <ImageButton
         android:id="@+id/cameraOption"
         android:layout_width="356dp"
@@ -27,6 +40,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/image_gallery" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/cancelButton"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/acceptButton"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/navBarConstraint"
