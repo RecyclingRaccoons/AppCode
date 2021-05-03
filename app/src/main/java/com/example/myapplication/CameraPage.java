@@ -81,7 +81,7 @@ public class CameraPage extends AppCompatActivity {
         accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent nextPage;
             }
         });
     }
