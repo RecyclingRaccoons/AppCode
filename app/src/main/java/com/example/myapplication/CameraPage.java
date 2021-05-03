@@ -40,6 +40,9 @@ public class CameraPage extends AppCompatActivity {
     //Followed gallery tutorial
     //https://www.youtube.com/watch?v=i5UcFAdKe5M
 
+    //How to rotate an ImageView
+    //https://stackoverflow.com/questions/8981845/android-rotate-image-in-imageview-by-an-angle
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +79,7 @@ public class CameraPage extends AppCompatActivity {
                 displayer.setVisibility(View.GONE);
                 cancel.setVisibility(View.GONE);
                 accept.setVisibility(View.GONE);
+                displayer.setRotation(0);
             }
         });
 
@@ -128,6 +132,7 @@ public class CameraPage extends AppCompatActivity {
         else if (requestCode == SELECT_FILE) {
             Uri selectedImg = data.getData();
             displayer.setImageURI(selectedImg);
+            displayer.setRotation(270);
             camera.setVisibility(View.GONE);
             gallery.setVisibility(View.GONE);
             displayer.setVisibility(View.VISIBLE);
