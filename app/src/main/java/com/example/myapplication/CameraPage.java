@@ -6,6 +6,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -31,10 +32,12 @@ public class CameraPage extends AppCompatActivity {
 
     private static final int PERM_CODE = 101;
     private static final int REQUEST_CODE = 102;
+    private static final int SELECT_FILE = 103;
 
     //Follow camera tutorial:
-    //https://www.youtube.com/watch?v=zeI0M9PtOBA
     //https://www.youtube.com/watch?v=s1aOlr3vbbk
+
+    //Followed gallery tutorial
 
 
     @Override
@@ -58,7 +61,9 @@ public class CameraPage extends AppCompatActivity {
         gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                gallery.setType("image/*");
+                startActivityForResult (gallery.createChooser(gallery, "Select File"), SELECT_FILE);
             }
         });
 
@@ -113,6 +118,15 @@ public class CameraPage extends AppCompatActivity {
         if (requestCode == REQUEST_CODE) {
             Bitmap image = (Bitmap) data.getExtras().get("data");
             displayer.setImageBitmap(image);
+            camera.setVisibility(View.GONE);
+            gallery.setVisibility(View.GONE);
+            displayer.setVisibility(View.VISIBLE);
+            cancel.setVisibility(View.VISIBLE);
+            accept.setVisibility(View.VISIBLE);
+        }
+        else if (requestCode == SELECT_FILE) {
+            Uri selectedImg = data.getData();
+            displayer.setImageURI(selectedImg);
             camera.setVisibility(View.GONE);
             gallery.setVisibility(View.GONE);
             displayer.setVisibility(View.VISIBLE);
