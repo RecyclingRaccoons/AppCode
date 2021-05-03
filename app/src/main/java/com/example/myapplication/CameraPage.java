@@ -38,6 +38,7 @@ public class CameraPage extends AppCompatActivity {
     //https://www.youtube.com/watch?v=s1aOlr3vbbk
 
     //Followed gallery tutorial
+    //https://www.youtube.com/watch?v=i5UcFAdKe5M
 
 
     @Override
