@@ -26,7 +26,6 @@
         <activity android:name=".RecyclingImportance" />
         <activity android:name=".AboutUsPage" />
         <activity android:name=".CameraPage" />
-        <activity android:name=".ImageAcceptance"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
