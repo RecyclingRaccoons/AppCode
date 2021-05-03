@@ -104,6 +104,7 @@
     <string name="condimentBottles">• Condiment bottles and jars</string>
     <string name="cleanItem">• Clean the item of any solids or liquids</string>
     // How to recycle glass
+    <string name="brokenGlass">• Do not recycle broken glass</string>
     <string name="checkContamination">• Check that your glass is not treated with chemicals or
         covered in any type of coating. This kind of glass is not recyclable.</string>
     <string name="checkAreaAvailability">• Check to see if glass is recyclable at your local recycling center </string>
@@ -114,7 +115,34 @@
     <string name="makeAnInstrument">• Turn it into an instrument</string>
 
     // Metal Information Page
-    <string name="dasfkjadf">dfjdf</string>
+    <string name="aluminumCansDes">Aluminum cans</string>
+    <string name="curbsideRecyclables">Examples of curbside recyclables:</string>
+    <string name="mExample1">• Tin or aluminum cans</string>
+    <string name="mExample2">• Disposable baking items</string>
+    <string name="mExample3">• Aluminum foil</string>
+    <string name="mExample4">• Paint cans</string>
+    <string name="notCurbside">Examples of NON curbside recyclables (must not infused with plastic): </string>
+    <string name="mExample5">• Pots and pans</string>
+    <string name="mExample6">• Metal utensils and other kitchen tools</string>
+    <string name="mExample7">• Metal tools</string>
+    <string name="mExample8">• Car parts or bicycle frames</string>
+    <string name="mExample9">• Metal shelves and other metal furniture</string>
+    <string name="mExample10">• Wire hangars</string>
+    <string name="mIdentify1">• Metal is a hard, typically shiny material</string>
+    <string name="mIdentify2">• It may be malleable and fusible </string>
+    <string name="m_step1">• Clean the metal of any food or liquid residue</string>
+    <string name="m_step2">• Metals under three inches like nails, screws, soda tabs, cannot be
+        recycled and should be thrown away</string>
+    <string name="m_step3">• If a substance is metallic but is infused with plastic (candy
+        wrappers, cookie wrappers, metal juice pouches, etc.), it is not recyclable and must be
+        thrown away. </string>
+    <string name="m_step4">• Curbside recyclables can simply be thrown into a curbside recycling
+        bin or brought to a recycling center. </string> // how to recycle
+    <string name="m_step5">• Non-curbside recyclables can be donated or brought to a scrap yard,
+        often with a light compensation</string>
+    <string name="m_step6">• Electronics and appliances cannot be recycled but can be recycled at a Best Buy or Staples </string>
+    <string name="m_idea1">• Metal scraps can be remade into jewelery </string>
+    <string name="m_idea2">• Metal of varying size can be used to make art of varying size </string>
 
     // Paper Information Page
     <string name="paperHeader">Paper</string>

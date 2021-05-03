@@ -38,38 +38,10 @@
                 app:srcCompat="@drawable/real_glass_for_glass_page" />
 
             <TextView
-                android:id="@+id/indentificationHeader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/identificationHeader"
-                android:textAlignment="textStart"
-                android:textColor="@color/teal_700"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/indentification1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/glassIdentificationInfo1"
-                android:textSize="@dimen/defaultParagraphTextSize" />
-
-            <TextView
-                android:id="@+id/identification2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/glassIdentificationInfo2"
-                android:textSize="@dimen/defaultParagraphTextSize" />
-
-            <TextView
                 android:id="@+id/examplesHeader2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="45dp"
                 android:text="@string/examples"
                 android:textColor="@color/teal_700"
                 android:textSize="40sp"
@@ -124,6 +96,34 @@
                 android:textSize="@dimen/defaultParagraphTextSize" />
 
             <TextView
+                android:id="@+id/indentificationHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/identificationHeader"
+                android:textAlignment="textStart"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/indentification1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/glassIdentificationInfo1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/identification2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/glassIdentificationInfo2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
                 android:id="@+id/howToRecycleHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -133,6 +133,14 @@
                 android:textColor="@color/teal_700"
                 android:textSize="40sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/brokenGlass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/brokenGlass"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
             <TextView
                 android:id="@+id/cleanItem"

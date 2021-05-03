@@ -11,19 +11,245 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/LinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/metalHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/topMargin"
                 android:text="@string/metal"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
                 android:textSize="@dimen/h1Size"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/aluminumPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+                android:contentDescription="@string/aluminumCansDes"
+                app:srcCompat="@drawable/aluminum" />
+
+            <TextView
+                android:id="@+id/recyclablesHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/curbsideRecyclables"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mExample1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample3"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample4"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/recyclablesHeader2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/notCurbside"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mExample5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample5"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample6"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample7"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample8"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample9"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mExample10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mExample10"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/howToidentify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/identify"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mIdentify1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mIdentify1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mIdentify2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/mIdentify2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/howToRecycleHeader3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/recycleHowTo"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mstep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mstep2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mstep3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step3"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mstep4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step4"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mstep5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step5"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/mstep6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_step6"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/howToRecycleHeader4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/reuseIdeas"
+                android:textColor="@color/teal_700"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idea1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/m_idea1"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
+            <TextView
+                android:id="@+id/idea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:layout_marginBottom="150dp"
+                android:text="@string/m_idea2"
+                android:textSize="@dimen/defaultParagraphTextSize" />
+
         </LinearLayout>
     </ScrollView>
 
