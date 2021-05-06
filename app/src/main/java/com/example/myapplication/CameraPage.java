@@ -6,6 +6,8 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -21,6 +23,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import java.io.File;
+
 
 public class CameraPage extends AppCompatActivity {
 
@@ -28,11 +32,13 @@ public class CameraPage extends AppCompatActivity {
     ImageButton gallery;
     ImageView displayer;
     Button cancel;
+    Button cancel2;
     Button accept;
 
     private static final int PERM_CODE = 101;
     private static final int REQUEST_CODE = 102;
     private static final int SELECT_FILE = 103;
+
 
     //Follow camera tutorial:
     //https://www.youtube.com/watch?v=s1aOlr3vbbk
@@ -52,7 +58,8 @@ public class CameraPage extends AppCompatActivity {
         camera = findViewById(R.id.cameraOption);
         displayer = findViewById(R.id.imgDisplayer);
         gallery = findViewById(R.id.imgOption);
-        cancel = findViewById(R.id.cancelButton);
+        cancel = findViewById(R.id.cancelButtonCam);
+        cancel2 = findViewById(R.id.cancelButtonGal);
         accept = findViewById(R.id.nextButton);
 
         camera.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +86,18 @@ public class CameraPage extends AppCompatActivity {
                 displayer.setVisibility(View.GONE);
                 cancel.setVisibility(View.GONE);
                 accept.setVisibility(View.GONE);
-                displayer.setRotation(0);
+            }
+        });
+
+        cancel2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                camera.setVisibility(View.VISIBLE);
+                gallery.setVisibility(View.VISIBLE);
+                displayer.setVisibility(View.GONE);
+                cancel2.setVisibility(View.GONE);
+                accept.setVisibility(View.GONE);
+                displayer.setRotation(270);
             }
         });
 
@@ -132,11 +150,12 @@ public class CameraPage extends AppCompatActivity {
         else if (requestCode == SELECT_FILE) {
             Uri selectedImg = data.getData();
             displayer.setImageURI(selectedImg);
-            displayer.setRotation(270);
+            displayer.setRotation(90);
+
             camera.setVisibility(View.GONE);
             gallery.setVisibility(View.GONE);
             displayer.setVisibility(View.VISIBLE);
-            cancel.setVisibility(View.VISIBLE);
+            cancel2.setVisibility(View.VISIBLE);
             accept.setVisibility(View.VISIBLE);
         }
     }
