@@ -2,65 +2,69 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SettingsPage">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/topMargin"
-        android:text="@string/intro_name"
-        android:textAlignment="center"
-        android:textColor="@color/teal_700"
-        android:textSize="@dimen/h1Size"
-        android:textStyle="bold"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/topMargin2"
+        android:layout_marginRight="@dimen/topMargin2"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/aboutUsButton"
-        android:layout_width="602dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="aboutUsPage"
-        android:text="@string/aboutUs"
-        android:textSize="@dimen/defaultParagraphTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/settingsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginBottom="@dimen/defaultParagraphSpacing"
+            android:text="@string/settings"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/h1Size"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/recyclingImportance"
-        android:layout_width="609dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:onClick="recyclingMainPage2"
-        android:text="@string/importance"
-        android:textSize="@dimen/defaultParagraphTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutUsButton" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="145dp">
 
-    <Button
-        android:id="@+id/references"
-        android:layout_width="602dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
-        android:text="@string/references"
-        android:textSize="@dimen/defaultParagraphTextSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclingImportance" />
+            <SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/camPerm"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                app:layout_constraintBottom_toTopOf="@+id/switch2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SwitchCompat
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/darkMode"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+            <SwitchCompat
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/locPerm"
+                android:textSize="@dimen/defaultParagraphTextSize"
+                app:layout_constraintBottom_toTopOf="@+id/switch3"
+                app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/navBarConstraint"

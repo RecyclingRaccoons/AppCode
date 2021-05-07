@@ -91,6 +91,11 @@
     <string name="referencesTitle">References</string>
     <string name="refsInAPA"></string>
 
+    // Settings Page
+    <string name="camPerm">Camera Permissions</string>
+    <string name="locPerm">Location Permissions</string>
+    <string name="darkMode">Dark Mode</string>
+
     // Glass Information Page
     <string name="identificationHeader">How to identify: </string>
     <string name="glassIdentificationInfo1">• it is transparent or translucent</string>
@@ -137,7 +142,8 @@
         wrappers, cookie wrappers, metal juice pouches, etc.), it is not recyclable and must be
         thrown away. </string>
     <string name="m_step4">• Curbside recyclables can simply be thrown into a curbside recycling
-        bin or brought to a recycling center. </string> // how to recycle
+        bin or brought to a recycling center. </string>
+    // how to recycle
     <string name="m_step5">• Non-curbside recyclables can be donated or brought to a scrap yard,
         often with a light compensation</string>
     <string name="m_step6">• Electronics and appliances cannot be recycled but can be recycled at a Best Buy or Staples </string>

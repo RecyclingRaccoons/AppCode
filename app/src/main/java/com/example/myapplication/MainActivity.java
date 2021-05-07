@@ -44,4 +44,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(toCamera);
     }
 
+    public void settingsPage(View v) {
+        Intent toSettings = new Intent(this, SettingsPage.class);
+        startActivity(toSettings);
+    }
+
 }

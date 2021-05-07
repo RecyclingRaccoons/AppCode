@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class AboutUsPage extends AppCompatActivity {
+public class SettingsPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us_page);
+        setContentView(R.layout.activity_settings_page);
     }
 
     public void toHomePage(View v) {
