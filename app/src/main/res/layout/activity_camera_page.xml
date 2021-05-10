@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="96dp"
         android:layout_marginBottom="12dp"
+        android:onClick="nextPage"
         android:text="@string/acceptButton"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/navBarConstraint"

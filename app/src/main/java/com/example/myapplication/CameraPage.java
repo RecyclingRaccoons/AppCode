@@ -100,13 +100,6 @@ public class CameraPage extends AppCompatActivity {
                 displayer.setRotation(270);
             }
         });
-
-        accept.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent nextPage;
-            }
-        });
     }
 
     private void askCameraPermissions() {
@@ -158,6 +151,11 @@ public class CameraPage extends AppCompatActivity {
             cancel2.setVisibility(View.VISIBLE);
             accept.setVisibility(View.VISIBLE);
         }
+    }
+
+    public void nextPage (View v) {
+        Intent next = new Intent(this, CameraQuestions.class);
+        startActivity(next);
     }
 
     public void toHomePage (View v){

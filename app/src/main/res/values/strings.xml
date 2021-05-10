@@ -195,6 +195,18 @@
     <string name="imgDisplayerDes">This area displays the image the user selected</string>
     <string name="acceptButton">Accept</string>
     <string name="cancelButton">Cancel</string>
+    <string name="questionHeader">Questions</string>
+    <string name="foodQuestion">There are traces of food on the object</string>
+    <string name="numberQuestion">Number on the object (if applicable)</string>
+    <string name="noneOption">None available</string>
+    <string name="oneOption">1</string>
+    <string name="twoOption">2</string>
+    <string name="threeOption">3</string>
+    <string name="fourOption">4</string>
+    <string name="fiveOption">5</string>
+    <string name="sixOption">6</string>
+    <string name="sevenOption">7</string>
+    <string name="numberExampleDes">This picture shows what to look for to find the recycling number</string>
 
     // Common Category Attributes
     <string name="examples">Examples:</string>
