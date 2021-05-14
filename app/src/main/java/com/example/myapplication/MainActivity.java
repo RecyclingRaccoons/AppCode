@@ -13,10 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Raccoons are cool
-        // Hello
-
-        // hola this is kasia
     }
 
     public void recyclingMainPage(View v) {
@@ -47,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
     public void settingsPage(View v) {
         Intent toSettings = new Intent(this, SettingsPage.class);
         startActivity(toSettings);
+    }
+
+    public void mapPage(View v) {
+        Intent toMap = new Intent(this, SettingsPage.class);
+        startActivity(toMap);
     }
 
 }

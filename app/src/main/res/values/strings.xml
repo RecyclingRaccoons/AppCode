@@ -309,4 +309,55 @@
     <string name="wipe">• Some CDs allow a user to wipe the existing data and insert new data</string>
     <string name="dangerPC">• Polycarbonate is especially dangerous due to its cancerous properties and its use has been widely discontinued</string>
 
+    // Map
+    <string name="worcester">Worcester County Recycling Facilities</string>
+    <string name="worcesterCat1">Plastic</string>
+    <string name="worcesterCat2">Paper</string>
+    <string name="worcesterCat3">Glass</string>
+    <string name="worcesterCat4">Metal</string>
+    <string name="plasticMap">Recycling Plastics</string>
+    <string name="paperMap">Recycling Paper</string>
+    <string name="glassMap">Recycling Glass</string>
+    <string name="metalMap">Recycling Metal</string>
+    <string name="plasticBag">Plastic Bags:</string>
+    <string name="plasticLocation1">• Shaws (Shrewsbury, Worcester, Auburn)</string>
+    <string name="plasticLocation2">• Target Store (Westborough, Worcester, Millbury)</string>
+    <string name="plasticLocation3">• Walmart (Worcester, West Boylston)</string>
+    <string name="bottleCap">Plastic Bottle Caps:</string>
+    <string name="p2Location1">• Town of Shrewsbury Curbside Recycling Program</string>
+    <string name="p2Location2">• City of Worcester Recycling Center</string>
+    <string name="p2Location3">• Town of Millbury Transfer Station</string>
+    <string name="p2Location4">• Town of Gafton Recycling Center</string>
+    <string name="styrofoam">Styrofoam:</string>
+    <string name="p3Location1">• Rigid Insulation</string>
+    <string name="p3Location2">• FP International</string>
+    <string name="p3Location3">• Wachusett Watershed Regional Recycling Center</string>
+    <string name="paperBag">Paper Bags:</string>
+    <string name="pa1Location1">• Town of Shrewsbury Curbside Recycling Program</string>
+    <string name="pa1Location2">• Rand-Whitney Recycling</string>
+    <string name="pa1Location3">• City of Worcester Recycling Center</string>
+    <string name="cBox">Large Cardboard Boxes:</string>
+    <string name="pa2Location1">• Town of Shrewsbury Curbside Recycling Program</string>
+    <string name="pa2Location2">• Rand-Whitney Recycling</string>
+    <string name="pa2Location3">• City of Worcester Recycling Center</string>
+    <string name="pa2Location4">• Tidy Town Service</string>
+    <string name="hazardMetal">Hazardous Metals:</string>
+    <string name="mLocation1">• City of Worcester Household Hazardous Waste Collection Program</string>
+    <string name="mLocation2">• Town of Westborough Household Hazardous Waste Collection Program</string>
+    <string name="mLocation3">• Wachusett Watershed Regional Household Hazardous Waste Collection Program</string>
+    <string name="mLocation4">• City of Marlborough Household Hazardous Waste Collection Program</string>
+    <string name="battery">Batteries:</string>
+    <string name="m2Location1">• Staples Store (Shrewsbury, Worcester)</string>
+    <string name="m2Location2">• Home Depot (Shrewsbury)</string>
+    <string name="m2Location3">• Advance Auto Parts (Car Batteries)</string>
+    <string name="m2Location4">• Walmart (Northborough)</string>
+    <string name="drinkingGlass">Glass Beverage Containers:</string>
+    <string name="gLocation1">• Town of Shrewsbury Curbside Recycling Program</string>
+    <string name="gLocation2">• Price Chopper (Worcester)</string>
+    <string name="gLocation3">• City of Worcester Recycling Center</string>
+    <string name="gLocation4">• Pennywise Market (Worcester)</string>
+    <string name="windowGlass">Window Glass:</string>
+    <string name="g2Location1">• Town of Millbury Transfer Station</string>
+    <string name="g2Location2">• PRTR Inc. Transfer Station (Marlborough)</string>
+
 </resources>

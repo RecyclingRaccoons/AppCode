@@ -13,7 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".SettingsPage"></activity>
+        <activity android:name=".GlassMap"></activity>
+        <activity android:name=".MetalMap" />
+        <activity android:name=".PaperMap" />
+        <activity android:name=".PlasticMap" />
+        <activity android:name=".SettingsPage" />
         <activity android:name=".MetalPage" />
         <activity android:name=".Category_7" />
         <activity android:name=".Category_6" />
@@ -29,8 +33,8 @@
         <activity android:name=".RecyclingImportance" />
         <activity android:name=".AboutUsPage" />
         <activity android:name=".CameraPage" />
-        <activity android:name="CameraQuestions" />
-        <activity android:name="MapPage"/>
+        <activity android:name=".CameraQuestions" />
+        <activity android:name=".MapPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

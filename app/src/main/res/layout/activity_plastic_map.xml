@@ -4,170 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category_4">
+    tools:context=".PlasticMap">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/exitButton4"
+                android:id="@+id/exitButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/returnPlastic"
-                android:onClick="toPlasticPage"
+                android:onClick="mapPage"
                 app:srcCompat="@android:drawable/btn_dialog" />
 
             <TextView
-                android:id="@+id/categoryHeader"
+                android:id="@+id/textView7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/topMargin2"
-                android:text="@string/catHeader4"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/plasticMap"
                 android:textAlignment="center"
                 android:textColor="@color/teal_700"
-                android:textSize="@dimen/h1Size"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="45dp"
-                android:contentDescription="@string/LDPE"
-                app:srcCompat="@drawable/ldpe" />
+                android:textSize="60sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/examplesHeader"
+                android:id="@+id/examplesHeader6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="45dp"
-                android:text="@string/examples"
+                android:text="@string/plasticBag"
                 android:textColor="@color/teal_700"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/example1"
+                android:id="@+id/example13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/pBags"
+                android:text="@string/plasticLocation1"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/example2"
+                android:id="@+id/example14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/frozen"
+                android:text="@string/plasticLocation2"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/example3"
+                android:id="@+id/example15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/trash"
+                android:text="@string/plasticLocation3"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/example4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/wraps"
-                android:textSize="27sp" />
-
-            <TextView
-                android:id="@+id/identifyHeader"
+                android:id="@+id/examplesHeader5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="45dp"
-                android:text="@string/identify"
+                android:text="@string/bottleCap"
                 android:textColor="@color/teal_700"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/identify1"
+                android:id="@+id/example10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/light"
+                android:text="@string/p2Location1"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/identify2"
+                android:id="@+id/example11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/flexible"
+                android:text="@string/p2Location2"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/recycleHowTo"
+                android:id="@+id/example12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/p2Location3"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/example16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/leftMargin"
+                android:text="@string/p2Location4"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/examplesHeader4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="45dp"
-                android:text="@string/recycleHowTo"
+                android:text="@string/styrofoam"
                 android:textColor="@color/teal_700"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/step1"
+                android:id="@+id/example"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/stepLDPE1"
+                android:text="@string/p3Location1"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/step2"
+                android:id="@+id/example7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/stepLDPE2"
+                android:text="@string/p3Location2"
                 android:textSize="27sp" />
 
             <TextView
-                android:id="@+id/reuseIdeas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="45dp"
-                android:text="@string/reuseIdeas"
-                android:textColor="@color/teal_700"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/reuse1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/leftMargin"
-                android:text="@string/parachute"
-                android:textSize="27sp" />
-
-            <TextView
-                android:id="@+id/reuse2"
+                android:id="@+id/example8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/leftMargin"
                 android:layout_marginBottom="200dp"
-                android:text="@string/chokingHazard"
+                android:text="@string/p3Location3"
                 android:textSize="27sp" />
 
         </LinearLayout>
@@ -238,5 +219,4 @@
             app:srcCompat="@drawable/settings_small" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

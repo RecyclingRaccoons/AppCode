@@ -6,11 +6,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/worcester"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="598dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/map2" />
+
+    <Button
+        android:id="@+id/wCat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:onClick="plasticPage"
+        android:text="@string/worcesterCat1"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/wCat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="476dp"
+        android:onClick="paperPage"
+        android:text="@string/worcesterCat2"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="0.213" />
+
+    <Button
+        android:id="@+id/wCat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:onClick="glassPage"
+        android:text="@string/worcesterCat3"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/wCat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="368dp"
+        android:onClick="metalPage"
+        android:text="@string/worcesterCat4"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="0.828" />
 
     <LinearLayout
         android:id="@+id/navBarConstraint"
@@ -33,17 +99,6 @@
             app:srcCompat="@drawable/house_small" />
 
         <ImageButton
-            android:id="@+id/cameraButton"
-            android:layout_width="115dp"
-            android:layout_height="115dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/camera"
-            android:onClick="cameraPage"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/infoButton"
-            app:srcCompat="@drawable/camera_small" />
-
-        <ImageButton
             android:id="@+id/recycleButton"
             android:layout_width="115dp"
             android:layout_height="115dp"
@@ -63,7 +118,18 @@
             android:onClick="mapPage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cameraButton"
-            app:srcCompat="@android:drawable/ic_dialog_map" />
+            app:srcCompat="@drawable/mapclipart" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            android:onClick="cameraPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
 
         <ImageButton
             android:id="@+id/settingsButton"

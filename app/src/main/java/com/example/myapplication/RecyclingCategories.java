@@ -54,4 +54,14 @@ public class RecyclingCategories extends AppCompatActivity {
         startActivity(toMetal);
     }
 
+    public void settingsPage(View v) {
+        Intent toSettings = new Intent(this, SettingsPage.class);
+        startActivity(toSettings);
+    }
+
+    public void mapPage (View v) {
+        Intent toMap = new Intent(this, MapPage.class);
+        startActivity(toMap);
+    }
+
 }

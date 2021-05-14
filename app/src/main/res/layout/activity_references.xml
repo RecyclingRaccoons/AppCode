@@ -1,24 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/exitButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="215dp"
+        android:contentDescription="@string/returnPlastic"
+        android:onClick="toHomePage"
+        app:layout_constraintEnd_toStartOf="@+id/referencesHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
         android:id="@+id/referencesHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/referencesTitle"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exitButton9" />
 
     <TextView
         android:id="@+id/bibliography"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="190dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/referencesHeading" />
+
+    <LinearLayout
+        android:id="@+id/navBarConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/houseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/home"
+            android:onClick="toHomePage"
+            app:srcCompat="@drawable/house_small" />
+
+        <ImageButton
+            android:id="@+id/recycleButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/recycle"
+            android:onClick="recyclingMainPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/map"
+            android:onClick="mapPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/mapclipart" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            android:onClick="cameraPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            android:onClick="settingsPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycleButton"
+            app:srcCompat="@drawable/settings_small" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

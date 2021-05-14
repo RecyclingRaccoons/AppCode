@@ -34,4 +34,9 @@ public class AboutUsPage extends AppCompatActivity {
         startActivity(toSettings);
     }
 
+    public void mapPage(View v) {
+        Intent toMap = new Intent(this, SettingsPage.class);
+        startActivity(toMap);
+    }
+
 }

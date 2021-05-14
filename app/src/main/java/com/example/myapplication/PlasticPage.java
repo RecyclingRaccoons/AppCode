@@ -64,4 +64,14 @@ public class PlasticPage extends AppCompatActivity {
         startActivity(toCategory7);
     }
 
+    public void settingsPage(View v) {
+        Intent toSettings = new Intent(this, SettingsPage.class);
+        startActivity(toSettings);
+    }
+
+    public void mapPage (View v) {
+        Intent toMap = new Intent(this, MapPage.class);
+        startActivity(toMap);
+    }
+
 }

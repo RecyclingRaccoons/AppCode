@@ -29,4 +29,14 @@ public class CameraQuestions extends AppCompatActivity {
         startActivity(toCamera);
     }
 
+    public void settingsPage(View v) {
+        Intent toSettings = new Intent(this, SettingsPage.class);
+        startActivity(toSettings);
+    }
+
+    public void mapPage(View v) {
+        Intent toMap = new Intent(this, SettingsPage.class);
+        startActivity(toMap);
+    }
+
 }

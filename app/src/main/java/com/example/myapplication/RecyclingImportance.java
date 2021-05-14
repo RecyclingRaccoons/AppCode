@@ -253,18 +253,28 @@ public class RecyclingImportance extends AppCompatActivity {
 
     }
 
+    public void recyclingMainPage(View v) {
+        Intent intent = new Intent(this, RecyclingCategories.class);
+        startActivity(intent);
+    }
+
     public void toHomePage(View v) {
         Intent toHome = new Intent(this, MainActivity.class);
         startActivity(toHome);
     }
 
-    public void recyclingMainPage(View v) {
-        Intent toCategories = new Intent(this, RecyclingCategories.class);
-        startActivity(toCategories);
-    }
-
     public void cameraPage(View v) {
         Intent toCamera = new Intent(this, CameraPage.class);
         startActivity(toCamera);
+    }
+
+    public void settingsPage(View v) {
+        Intent toSettings = new Intent(this, SettingsPage.class);
+        startActivity(toSettings);
+    }
+
+    public void mapPage (View v) {
+        Intent toMap = new Intent(this, MapPage.class);
+        startActivity(toMap);
     }
 }

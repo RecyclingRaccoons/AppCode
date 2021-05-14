@@ -87,17 +87,6 @@
             app:srcCompat="@drawable/house_small" />
 
         <ImageButton
-            android:id="@+id/cameraButton"
-            android:layout_width="115dp"
-            android:layout_height="115dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/camera"
-            android:onClick="cameraPage"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/infoButton"
-            app:srcCompat="@drawable/camera_small" />
-
-        <ImageButton
             android:id="@+id/recycleButton"
             android:layout_width="115dp"
             android:layout_height="115dp"
@@ -107,6 +96,28 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cameraButton"
             app:srcCompat="@drawable/recycling_small" />
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/map"
+            android:onClick="mapPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cameraButton"
+            app:srcCompat="@drawable/mapclipart" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/camera"
+            android:onClick="cameraPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/infoButton"
+            app:srcCompat="@drawable/camera_small" />
 
         <ImageButton
             android:id="@+id/settingsButton"

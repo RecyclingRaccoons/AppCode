@@ -6,31 +6,13 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-public class MapPage extends AppCompatActivity implements OnMapReadyCallback {
+public class MapPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        setContentView(R.layout.activity_main);
 
-        SupportMapFragment mapFragment = SupportMapFragment.newInstance();
-        getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.map, mapFragment)
-                .commit();
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
     }
 
     public void recyclingMainPage(View v) {
@@ -56,6 +38,26 @@ public class MapPage extends AppCompatActivity implements OnMapReadyCallback {
     public void mapPage (View v) {
         Intent toMap = new Intent(this, MapPage.class);
         startActivity(toMap);
+    }
+
+    public void plasticPage(View v) {
+        Intent toPlastic = new Intent(this, MainActivity.class);
+        startActivity(toPlastic);
+    }
+
+    public void paperPage(View v) {
+        Intent toPaper = new Intent(this, CameraPage.class);
+        startActivity(toPaper);
+    }
+
+    public void metalPage(View v) {
+        Intent toMetal = new Intent(this, SettingsPage.class);
+        startActivity(toMetal);
+    }
+
+    public void glassPage(View v) {
+        Intent toGlass = new Intent(this, MapPage.class);
+        startActivity(toGlass);
     }
 }
 
