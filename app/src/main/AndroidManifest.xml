@@ -30,6 +30,7 @@
         <activity android:name=".AboutUsPage" />
         <activity android:name=".CameraPage" />
         <activity android:name="CameraQuestions" />
+        <activity android:name="MapPage"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
