@@ -360,4 +360,10 @@
     <string name="g2Location1">• Town of Millbury Transfer Station</string>
     <string name="g2Location2">• PRTR Inc. Transfer Station (Marlborough)</string>
 
+    //References
+    <string name="r1">Bothwell, L. (2016, May 11). 10 Innovative and Informative Waste and Recycling Apps. Waste360. https://www.waste360.com/waste-reduction/10-innovative-and-informative-waste-and-recycling-apps</string>
+    <string name="r2">Peters, A. (n.d.). All the ways recycling is broken—And how to fix them. Retrieved March 30, 2021, from https://www.fastcompany.com/90321566/all-the-ways-recycling-is-broken-and-how-to-fix-them</string>
+    <string name="r3">Schumaker, E. (2016, August 3). This Is Why You Have So Much Trouble Recycling. HuffPost. https://www.huffpost.com/entry/psychology-of-why-people-dont-recycle_n_57697a7be4b087b70be605b3</string>
+    <string name="r4">What are the Negative Effects of Landfill? (2020, November 30). SL Recycling. https://www.slrecyclingltd.co.uk/what-are-the-negative-effects-of-landfill/</string>
+    <string name="r5">We would like to thank Mrs. Taricco for all of her help</string>
 </resources>
