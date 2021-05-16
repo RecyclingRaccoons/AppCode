@@ -40,23 +40,23 @@ public class MapPage extends AppCompatActivity {
         startActivity(toMap);
     }
 
-    public void plasticPage(View v) {
-        Intent toPlastic = new Intent(this, MainActivity.class);
+    public void plasticMap(View v) {
+        Intent toPlastic = new Intent(this, PlasticMap.class);
         startActivity(toPlastic);
     }
 
-    public void paperPage(View v) {
-        Intent toPaper = new Intent(this, CameraPage.class);
+    public void paperMap(View v) {
+        Intent toPaper = new Intent(this, PaperMap.class);
         startActivity(toPaper);
     }
 
-    public void metalPage(View v) {
-        Intent toMetal = new Intent(this, SettingsPage.class);
+    public void metalMap(View v) {
+        Intent toMetal = new Intent(this, MetalMap.class);
         startActivity(toMetal);
     }
 
-    public void glassPage(View v) {
-        Intent toGlass = new Intent(this, MapPage.class);
+    public void glassMap(View v) {
+        Intent toGlass = new Intent(this, GlassMap.class);
         startActivity(toGlass);
     }
 }

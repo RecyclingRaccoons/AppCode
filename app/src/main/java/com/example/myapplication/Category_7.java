@@ -40,7 +40,7 @@ public class Category_7 extends AppCompatActivity {
     }
 
     public void mapPage(View v) {
-        Intent toMap = new Intent(this, SettingsPage.class);
+        Intent toMap = new Intent(this, MapPage.class);
         startActivity(toMap);
     }
 

@@ -6,22 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class GlassPage extends AppCompatActivity {
+public class References extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_glass_page);
+        setContentView(R.layout.activity_references2);
+    }
+
+    public void recyclingMainPage(View v) {
+        Intent intent = new Intent(this, RecyclingCategories.class);
+        startActivity(intent);
+    }
+
+    public void aboutUsPage(View v) {
+        Intent intentToAboutUs = new Intent(this, AboutUsPage.class);
+        startActivity(intentToAboutUs);
     }
 
     public void toHomePage(View v) {
         Intent toHome = new Intent(this, MainActivity.class);
         startActivity(toHome);
-    }
-
-    public void recyclingMainPage(View v) {
-        Intent toCategories = new Intent(this, RecyclingCategories.class);
-        startActivity(toCategories);
     }
 
     public void cameraPage(View v) {
@@ -38,5 +43,4 @@ public class GlassPage extends AppCompatActivity {
         Intent toMap = new Intent(this, MapPage.class);
         startActivity(toMap);
     }
-
 }

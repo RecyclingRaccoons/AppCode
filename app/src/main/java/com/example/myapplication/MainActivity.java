@@ -46,8 +46,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mapPage(View v) {
-        Intent toMap = new Intent(this, SettingsPage.class);
+        Intent toMap = new Intent(this, MapPage.class);
         startActivity(toMap);
+    }
+
+    public void referencePage(View v) {
+        Intent toSource = new Intent(this, References.class);
+        startActivity(toSource);
     }
 
 }
