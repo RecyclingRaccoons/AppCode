@@ -1,18 +1,15 @@
 package com.example.myapplication;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -20,7 +17,12 @@ import com.google.android.material.switchmaterial.SwitchMaterial;
 public class SettingsPage extends AppCompatActivity {
 
     private SwitchMaterial camera;
+    private SwitchMaterial location;
+
     private static final int CAMERA_PERMISSION_CODE = 100;
+    private static final int LOCATION_PERMISSION_CODE = 101;
+
+    // Created with assistance from https://www.geeksforgeeks.org/android-how-to-request-permissions-in-android-application/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class SettingsPage extends AppCompatActivity {
         setContentView(R.layout.activity_settings_page);
 
         camera = findViewById(R.id.switch1);
+        location = findViewById((R.id.switch2));
 
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,16 +39,24 @@ public class SettingsPage extends AppCompatActivity {
                 checkPermission(Manifest.permission.CAMERA, CAMERA_PERMISSION_CODE);
             }
         });
+
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                checkPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_PERMISSION_CODE);
+            }
+        });
     }
 
     public void checkPermission(String permission, int requestCode)
     {
-        // Checking if permission is not granted
+
         if (ContextCompat.checkSelfPermission(SettingsPage.this, permission) == PackageManager.PERMISSION_DENIED) {
             ActivityCompat.requestPermissions(SettingsPage.this, new String[] { permission }, requestCode);
         }
         else {
-            Toast.makeText(SettingsPage.this, "Permission already granted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(SettingsPage.this, "Permission already granted, access device settings to change permissions", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -64,6 +75,12 @@ public class SettingsPage extends AppCompatActivity {
             }
             else {
                 Toast.makeText(SettingsPage.this, "Camera Permission Denied", Toast.LENGTH_SHORT) .show();
+            }
+        } else if (requestCode == LOCATION_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(SettingsPage.this, "Location Permission Granted", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(SettingsPage.this, "Location Permission Denied", Toast.LENGTH_SHORT).show();
             }
         }
     }
