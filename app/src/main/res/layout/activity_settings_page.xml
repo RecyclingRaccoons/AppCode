@@ -36,16 +36,18 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="145dp">
 
-            <Switch
+            <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/switch1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="askCameraPermission"
                 android:text="@string/camPerm"
                 android:textSize="@dimen/defaultParagraphTextSize"
                 app:layout_constraintBottom_toTopOf="@+id/switch2"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <SwitchCompat
+            <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/switch3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,7 +56,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
-            <SwitchCompat
+            <com.google.android.material.switchmaterial.SwitchMaterial
                 android:id="@+id/switch2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
