@@ -68,14 +68,15 @@ public class SettingsPage extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                checkPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_PERMISSION_CODE);
+                checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
+                checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
             }
         });
 
     }
 
     /**
-     * Check whether permission is granted or not. it then either requests permission or has a message
+     * Check whether permission is granted or not. It then either requests permission or has a message
      * @param permission the specific service that needs to receive permission to be used
      * @param requestCode checks user response
      */
@@ -91,7 +92,7 @@ public class SettingsPage extends AppCompatActivity {
     }
 
     /**
-     * This methods supplies the results of permission to services being granted
+     * This methods supplies the results of permission to services being granted or denied
      * @param requestCode checks user response
      * @param permissions the specific service that needs to receive permission to be used
      * @param grantResults the final message to the user
