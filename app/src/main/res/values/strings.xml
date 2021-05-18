@@ -96,6 +96,7 @@
     // Settings Page
     <string name="camPerm">Camera Permissions</string>
     <string name="locPerm">Location Permissions</string>
+    <string name="stoPerm">Storage Permissions</string>
     <string name="darkMode">Dark Mode</string>
 
     // Glass Information Page
