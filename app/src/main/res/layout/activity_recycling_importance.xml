@@ -58,6 +58,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recyclingImportanceTitle" />
 
+            <TextView
+                android:id="@+id/cartoonReference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cartoonReference"
+                android:textAlignment="center" />
+
             <RelativeLayout
                 android:id="@+id/environment"
                 android:layout_width="match_parent"
@@ -310,16 +317,20 @@
             <ImageView
                 android:id="@+id/sadRecycling"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="423dp"
                 android:contentDescription="@string/sad_recycling_description"
+                android:cropToPadding="false"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/sad_recycling" />
 
             <TextView
                 android:id="@+id/properRecyclingInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/recycleProperly_info" />
+                android:padding="@dimen/defaultParagraphSpacing"
+                android:text="@string/recycleProperly_info"
+                android:textAlignment="center"
+                android:textSize="@dimen/defaultParagraphTextSize" />
 
             <TextView
                 android:id="@+id/processTitle"

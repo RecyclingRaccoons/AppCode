@@ -59,6 +59,7 @@
     <string name="recyclingImportance">Recycling Importance</string>
     <string name="importanceInstructions">Click on the circles on each picture to learn more about why recycling is important</string>
     <string name="environmentTitle">Environmental Impact</string>
+    <string name="cartoonReference">This cartoon is from http://www.seppo.net/cartoons/displayimage.php?pid=1367</string>
     <string name="economicTitle">Economic Impact</string>
     <string name="recycleProperly">Why is it important to recycle properly?</string>
     <string name="sad_recycling_description">This is a picture of a sad recycling bin</string>

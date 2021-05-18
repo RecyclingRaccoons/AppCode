@@ -1,3 +1,7 @@
+/**
+ * This class controls the recycling importance page
+ * @author Recycling Raccoons
+ */
 package com.example.myapplication;
 
 import android.annotation.SuppressLint;
@@ -55,6 +59,9 @@ public class RecyclingImportance extends AppCompatActivity {
         landfillB = findViewById(R.id.landfill);
         exit = findViewById(R.id.exitBox);
 
+        /**
+         * Controls the functions of the landfill circle button in the environmental impact infographic
+         */
         landfillB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,6 +78,9 @@ public class RecyclingImportance extends AppCompatActivity {
         incinerator = findViewById(R.id.incineratorInfo);
         incineratorB = findViewById(R.id.incinerator);
 
+        /**
+         * Controls the functions of the incinerator circle button in the environmental impact infographic
+         */
         incineratorB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +97,9 @@ public class RecyclingImportance extends AppCompatActivity {
         resources = findViewById(R.id.resourcesInfo);
         resourcesB = findViewById(R.id.resources);
 
+        /**
+         * Controls the functions of the natural resources circle button in the environment impact infographic
+         */
         resourcesB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +116,9 @@ public class RecyclingImportance extends AppCompatActivity {
         energy = findViewById(R.id.energyInfo);
         energyB = findViewById(R.id.energy);
 
+        /**
+         * Controls the function of the energy circle button in the environmental impact infographic
+         */
         energyB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,6 +132,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the function of the "x" button for the environmental impact infographic
+         */
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,6 +155,9 @@ public class RecyclingImportance extends AppCompatActivity {
         circularB = findViewById(R.id.circularEcon);
         exit2 = findViewById(R.id.exitBox2);
 
+        /**
+         * Controls the function of the circular economy button in the economic impact infographic
+         */
         circularB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,6 +172,9 @@ public class RecyclingImportance extends AppCompatActivity {
         jobs = findViewById(R.id.jobsInfo);
         jobsB = findViewById(R.id.jobs);
 
+        /**
+         * Controls the function of the recycling jobs button in the economic impact infographic
+         */
         jobsB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,6 +186,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the function of the "x" button in the economic impact infographic
+         */
         exit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -183,6 +211,9 @@ public class RecyclingImportance extends AppCompatActivity {
         newProductB = findViewById(R.id.newProduct);
         exit3 = findViewById(R.id.exitBox3);
 
+        /**
+         * Controls the functions of the recycling collection button in the recycling process infographic
+         */
         collectionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -196,6 +227,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the functions of the cleaning button in the recycling process infographic
+         */
         cleaningB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -209,6 +243,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the functions of the manufacturing button in the recycling process infographic
+         */
         manufacturingB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -222,6 +259,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the functions of the new product button in the recycling process infographic
+         */
         newProductB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -235,6 +275,9 @@ public class RecyclingImportance extends AppCompatActivity {
             }
         });
 
+        /**
+         * Controls the functions of the "x" button in the recycling process infographic
+         */
         exit3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -253,26 +296,46 @@ public class RecyclingImportance extends AppCompatActivity {
 
     }
 
+    /**
+     * Opens the recycling main page
+     * @param v represents the camera xml file
+     */
     public void recyclingMainPage(View v) {
         Intent intent = new Intent(this, RecyclingCategories.class);
         startActivity(intent);
     }
 
+    /**
+     * Opens the home page
+     * @param v represents the camera xml file
+     */
     public void toHomePage(View v) {
         Intent toHome = new Intent(this, MainActivity.class);
         startActivity(toHome);
     }
 
+    /**
+     * Opens the camera page
+     * @param v represents the camera xml file
+     */
     public void cameraPage(View v) {
         Intent toCamera = new Intent(this, CameraPage.class);
         startActivity(toCamera);
     }
 
+    /**
+     * Opens the settings page
+     * @param v represents the camera xml file
+     */
     public void settingsPage(View v) {
         Intent toSettings = new Intent(this, SettingsPage.class);
         startActivity(toSettings);
     }
 
+    /**
+     * Opens the map page
+     * @param v represents the camera xml file
+     */
     public void mapPage (View v) {
         Intent toMap = new Intent(this, MapPage.class);
         startActivity(toMap);
