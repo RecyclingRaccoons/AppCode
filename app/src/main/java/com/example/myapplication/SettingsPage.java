@@ -18,8 +18,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.material.switchmaterial.SwitchMaterial;
-
 public class SettingsPage extends AppCompatActivity {
 
     private Button camera;
@@ -41,6 +39,9 @@ public class SettingsPage extends AppCompatActivity {
         location = findViewById(R.id.switch2);
         storage = findViewById(R.id.switch3);
 
+        /**
+         * Activates the checkPermission method when the button is clicked
+         */
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -49,6 +50,9 @@ public class SettingsPage extends AppCompatActivity {
             }
         });
 
+        /**
+         * Activates the checkPermission method when the button is clicked
+         */
         location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -57,6 +61,9 @@ public class SettingsPage extends AppCompatActivity {
             }
         });
 
+        /**
+         * Activates the checkPermission method when the button is clicked
+         */
         storage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -68,9 +75,9 @@ public class SettingsPage extends AppCompatActivity {
     }
 
     /**
-     * Method that checks whether the user has allowed the user to access certain services and displays a Toast message if already allowed
+     * Check whether permission is granted or not. it then either requests permission or has a message
      * @param permission the specific service that needs to receive permission to be used
-     * @param requestCode
+     * @param requestCode checks user response
      */
     public void checkPermission(String permission, int requestCode)
     {
@@ -85,9 +92,9 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * This methods supplies the results of permission to services being granted
-     * @param requestCode the
-     * @param permissions
-     * @param grantResults
+     * @param requestCode checks user response
+     * @param permissions the specific service that needs to receive permission to be used
+     * @param grantResults the final message to the user
      */
     @Override
     public void onRequestPermissionsResult(int requestCode,
