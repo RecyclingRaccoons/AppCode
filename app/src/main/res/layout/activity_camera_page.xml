@@ -113,6 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="115dp"
             android:layout_weight="1"
+            android:contentDescription="@string/map"
             android:onClick="mapPage"
             app:srcCompat="@drawable/mapclipart" />
 
@@ -133,6 +134,7 @@
             android:layout_height="115dp"
             android:layout_weight="1"
             android:contentDescription="@string/settings"
+            android:onClick="settingsPage"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/recycleButton"
             app:srcCompat="@drawable/settings_small" />
