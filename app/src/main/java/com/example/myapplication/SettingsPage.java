@@ -1,5 +1,5 @@
 /**
- * This class models the main activity or introduction page's xml file content and buttons
+ * This class models the settings page's xml file content and buttons
  * @author Recycling Raccoons
  */
 
@@ -130,7 +130,7 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * On click method to take user to the main recycling page
-     * @param v represents the main activity page xml file content
+     * @param v represents the settings page xml file content
      */
     public void recyclingMainPage(View v) {
         Intent intent = new Intent(this, RecyclingCategories.class);
@@ -139,7 +139,7 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * On click method to take user to the home page
-     * @param v represents the main activity page xml file content
+     * @param v represents the settings page xml file content
      */
     public void toHomePage(View v) {
         Intent toHome = new Intent(this, MainActivity.class);
@@ -148,7 +148,7 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * On click method to take user to the camera page
-     * @param v represents the main activity page xml file content
+     * @param v represents the settings page xml file content
      */
     public void cameraPage(View v) {
         Intent toCamera = new Intent(this, CameraPage.class);
@@ -157,7 +157,7 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * On click method to take user to the accessibility settings page
-     * @param v represents the main activity page xml file content
+     * @param v represents the settings page xml file content
      */
     public void settingsPage(View v) {
         Intent toSettings = new Intent(this, SettingsPage.class);
@@ -166,7 +166,7 @@ public class SettingsPage extends AppCompatActivity {
 
     /**
      * On click method to take user to the map page
-     * @param v represents the main activity page xml file content
+     * @param v represents the settings page xml file content
      */
     public void mapPage(View v) {
         Intent toMap = new Intent(this, MapPage.class);
